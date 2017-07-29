@@ -15,6 +15,8 @@
 		699A69A41F19816000E9CAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */; };
 		699A69AF1F19816000E9CAD9 /* DRRHSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69AE1F19816000E9CAD9 /* DRRHSTests.swift */; };
 		699A69BA1F19816000E9CAD9 /* DRRHSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69B91F19816000E9CAD9 /* DRRHSUITests.swift */; };
+		69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */; };
+		69CD33321F19CD4200EFA818 /* TwitterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CD33311F19CD4200EFA818 /* TwitterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		699A69B51F19816000E9CAD9 /* DRRHSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DRRHSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A69B91F19816000E9CAD9 /* DRRHSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRRHSUITests.swift; sourceTree = "<group>"; };
 		699A69BB1F19816000E9CAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		69CD33311F19CD4200EFA818 /* TwitterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterTableViewCell.swift; path = ../TwitterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				699A69971F19816000E9CAD9 /* AppDelegate.swift */,
 				699A69991F19816000E9CAD9 /* FirstViewController.swift */,
 				699A699B1F19816000E9CAD9 /* SecondViewController.swift */,
+				69CD33311F19CD4200EFA818 /* TwitterTableViewCell.swift */,
+				69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */,
 				699A699D1F19816000E9CAD9 /* Main.storyboard */,
 				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
 				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
@@ -196,7 +202,7 @@
 				TargetAttributes = {
 					699A69931F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = TGLE8RZWF5;
+						DevelopmentTeam = XLEYC29AG5;
 						ProvisioningStyle = Automatic;
 					};
 					699A69A91F19816000E9CAD9 = {
@@ -267,7 +273,9 @@
 			files = (
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
+				69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */,
 				699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */,
+				69CD33321F19CD4200EFA818 /* TwitterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +427,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.holme.DRRHS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -432,12 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.holme.DRRHS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -518,6 +528,7 @@
 				699A69C01F19816000E9CAD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		699A69C11F19816000E9CAD9 /* Build configuration list for PBXNativeTarget "DRRHSTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +537,7 @@
 				699A69C31F19816000E9CAD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		699A69C41F19816000E9CAD9 /* Build configuration list for PBXNativeTarget "DRRHSUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +546,7 @@
 				699A69C61F19816000E9CAD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
