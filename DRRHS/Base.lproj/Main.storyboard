@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,35 +27,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-LK-af6">
-                                <rect key="frame" x="0.0" y="94" width="375" height="524"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <connections>
                                     <segue destination="IBb-ac-I1Z" kind="embed" id="SAo-5f-pHz"/>
                                 </connections>
                             </containerView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="12y-Bm-2jp">
-                                <rect key="frame" x="136" y="64" width="103" height="29"/>
-                                <segments>
-                                    <segment title="Green"/>
-                                    <segment title="Gold"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segmentedControl:" destination="9pv-A4-QxB" eventType="valueChanged" id="phU-2E-xHi"/>
-                                </connections>
-                            </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xP-ex-PSV">
-                                <rect key="frame" x="0.0" y="94" width="375" height="524"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <connections>
                                     <segue destination="tZj-ns-IGW" kind="embed" id="le9-iz-PCq"/>
                                 </connections>
                             </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="12y-Bm-2jp">
+                                <rect key="frame" x="136" y="72" width="103" height="29"/>
+                                <segments>
+                                    <segment title="Green"/>
+                                    <segment title="Gold"/>
+                                </segments>
+                                <color key="tintColor" red="0.96851359159999995" green="0.92739349879999999" blue="0.054551338079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="9pv-A4-QxB" eventType="valueChanged" id="phU-2E-xHi"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="12y-Bm-2jp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="6JQ-nD-1bH"/>
-                            <constraint firstItem="0xP-ex-PSV" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="8v3-2W-ypl"/>
-                            <constraint firstItem="R6i-LK-af6" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="GCF-u6-Dg8"/>
+                            <constraint firstItem="12y-Bm-2jp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="6JQ-nD-1bH"/>
+                            <constraint firstItem="0xP-ex-PSV" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" constant="49" id="8v3-2W-ypl"/>
+                            <constraint firstItem="R6i-LK-af6" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" constant="49" id="GCF-u6-Dg8"/>
                             <constraint firstItem="12y-Bm-2jp" firstAttribute="centerX" secondItem="0xP-ex-PSV" secondAttribute="centerX" id="H2u-Ch-bPg"/>
-                            <constraint firstItem="0xP-ex-PSV" firstAttribute="top" secondItem="12y-Bm-2jp" secondAttribute="bottom" constant="2" id="KhF-b1-Qpl"/>
+                            <constraint firstItem="0xP-ex-PSV" firstAttribute="top" secondItem="12y-Bm-2jp" secondAttribute="bottom" constant="-36" id="KhF-b1-Qpl"/>
                             <constraint firstAttribute="trailing" secondItem="0xP-ex-PSV" secondAttribute="trailing" id="NhW-Ej-u0T"/>
                             <constraint firstItem="0xP-ex-PSV" firstAttribute="trailing" secondItem="R6i-LK-af6" secondAttribute="trailing" id="RLe-L3-tjb"/>
                             <constraint firstItem="R6i-LK-af6" firstAttribute="leading" secondItem="0xP-ex-PSV" secondAttribute="leading" id="mAs-Ew-mKW"/>
@@ -77,6 +77,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="button" destination="12y-Bm-2jp" id="jOA-qb-ugv"/>
                         <outlet property="goldDay" destination="0xP-ex-PSV" id="rMj-2z-jOg"/>
                         <outlet property="greenDay" destination="R6i-LK-af6" id="FO5-4g-TBz"/>
                     </connections>
@@ -251,6 +252,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bPE-b9-yTY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -270,6 +272,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gEs-hu-1hA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -331,6 +334,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sEU-P5-J2b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -341,41 +345,111 @@
             </objects>
             <point key="canvasLocation" x="746.39999999999998" y="-71.514242878560722"/>
         </scene>
-        <!--View Controller-->
+        <!--Gold Day View Controller-->
         <scene sceneID="4lP-va-jOG">
             <objects>
-                <viewController id="IBb-ac-I1Z" sceneMemberID="viewController">
+                <viewController id="IBb-ac-I1Z" customClass="GoldDayViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B7O-nT-3RB"/>
                         <viewControllerLayoutGuide type="bottom" id="3Mw-yv-6cN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hII-8h-Wh4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HYO-zC-aeb">
+                                <rect key="frame" x="16" y="70" width="343" height="514"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g21-VI-Fyg">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNL-Iw-k8V">
+                                        <rect key="frame" x="0.0" y="132.5" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9c-Gs-lEO">
+                                        <rect key="frame" x="0.0" y="265" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgf-xj-ecV">
+                                        <rect key="frame" x="0.0" y="397.5" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.96621346470000002" green="0.92771602870000003" blue="0.048003570119999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3Mw-yv-6cN" firstAttribute="top" secondItem="HYO-zC-aeb" secondAttribute="bottom" constant="19" id="4if-CS-Eyh"/>
+                            <constraint firstItem="HYO-zC-aeb" firstAttribute="top" secondItem="B7O-nT-3RB" secondAttribute="bottom" constant="50" id="CjW-K5-lBs"/>
+                            <constraint firstItem="HYO-zC-aeb" firstAttribute="trailing" secondItem="hII-8h-Wh4" secondAttribute="trailingMargin" id="ZGA-rL-v2S"/>
+                            <constraint firstItem="HYO-zC-aeb" firstAttribute="leading" secondItem="hII-8h-Wh4" secondAttribute="leadingMargin" id="vXF-Cz-ocX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blockFour" destination="Tgf-xj-ecV" id="jfH-Sg-rCe"/>
+                        <outlet property="blockOne" destination="g21-VI-Fyg" id="4eL-vV-yNB"/>
+                        <outlet property="blockThree" destination="f9c-Gs-lEO" id="moF-yU-0SO"/>
+                        <outlet property="blockTwo" destination="xNL-Iw-k8V" id="5hw-7M-VzR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN6-n4-qUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="-1428"/>
+            <point key="canvasLocation" x="2036" y="-1423"/>
         </scene>
-        <!--View Controller-->
+        <!--Green Day View Controller-->
         <scene sceneID="dUh-Un-HIx">
             <objects>
-                <viewController id="tZj-ns-IGW" sceneMemberID="viewController">
+                <viewController id="tZj-ns-IGW" customClass="GreenDayViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J5O-VM-A7x"/>
                         <viewControllerLayoutGuide type="bottom" id="RZF-ww-O8D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cie-Dw-J5Z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.48036782480000001" green="0.84217130829999998" blue="0.21947396599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="x4D-PW-Abc">
+                                <rect key="frame" x="16" y="70" width="343" height="514"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9T-LV-q3H">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wib-CU-Wgs">
+                                        <rect key="frame" x="0.0" y="132.5" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAO-Fj-Eps">
+                                        <rect key="frame" x="0.0" y="265" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vf-SP-uXe">
+                                        <rect key="frame" x="0.0" y="397.5" width="343" height="116.5"/>
+                                        <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2468539638993055" green="0.6044009343016572" blue="0.16591398196516061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="x4D-PW-Abc" firstAttribute="leading" secondItem="Cie-Dw-J5Z" secondAttribute="leadingMargin" id="T8U-xK-ziN"/>
+                            <constraint firstItem="x4D-PW-Abc" firstAttribute="top" secondItem="J5O-VM-A7x" secondAttribute="bottom" constant="50" id="eqp-z9-ZtM"/>
+                            <constraint firstItem="RZF-ww-O8D" firstAttribute="top" secondItem="x4D-PW-Abc" secondAttribute="bottom" constant="19" id="t2X-AS-4yv"/>
+                            <constraint firstItem="x4D-PW-Abc" firstAttribute="trailing" secondItem="Cie-Dw-J5Z" secondAttribute="trailingMargin" id="w3J-nY-4N8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blockFour" destination="1vf-SP-uXe" id="ugV-TH-gWb"/>
+                        <outlet property="blockOne" destination="e9T-LV-q3H" id="Lyb-lm-zz6"/>
+                        <outlet property="blockThree" destination="mAO-Fj-Eps" id="Maf-R5-fIr"/>
+                        <outlet property="blockTwo" destination="Wib-CU-Wgs" id="wYU-fr-DAD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzu-2G-U19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2065" y="-1407"/>
+            <point key="canvasLocation" x="1270" y="-1423"/>
         </scene>
     </scenes>
     <resources>
