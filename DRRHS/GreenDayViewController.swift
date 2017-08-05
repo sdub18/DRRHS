@@ -16,6 +16,15 @@ class GreenDayViewController: UIViewController {
     @IBOutlet weak var blockFour: UIView!
     @IBOutlet weak var homeworkButton: UIView!
     
+    @IBAction func editButtonIsPushed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GreenBlock1Edit", sender: self)
+    }
+    @IBAction func GRB1(segue:UIStoryboardSegue)
+    {
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
