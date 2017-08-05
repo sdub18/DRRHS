@@ -363,18 +363,62 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g21-VI-Fyg">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07Q-Y4-5hv">
+                                                <rect key="frame" x="148" y="38" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="B1EditPressed:" destination="IBb-ac-I1Z" eventType="touchUpInside" id="Lkt-3P-nQC"/>
+                                                    <segue destination="DsG-dW-Zeh" kind="showDetail" identifier="GoldBlock1Edit" id="fLh-Wq-MTy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNL-Iw-k8V">
                                         <rect key="frame" x="0.0" y="117.5" width="343" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6c-7q-Oeo">
+                                                <rect key="frame" x="148" y="39" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="B2EditPressed:" destination="IBb-ac-I1Z" eventType="touchUpInside" id="xq6-Yk-QMy"/>
+                                                    <segue destination="gwF-Z3-gCL" kind="showDetail" identifier="GoldBlock2Edit" id="mhK-Cc-JxJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9c-Gs-lEO">
                                         <rect key="frame" x="0.0" y="235" width="343" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcR-zG-htg">
+                                                <rect key="frame" x="148" y="38" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="B3EditPressed:" destination="IBb-ac-I1Z" eventType="touchUpInside" id="DF7-b8-oQN"/>
+                                                    <segue destination="Obs-gH-tQn" kind="showDetail" identifier="GoldBlock3Edit" id="954-ZZ-uyO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgf-xj-ecV">
                                         <rect key="frame" x="0.0" y="352.5" width="343" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh1-4t-0gu">
+                                                <rect key="frame" x="148" y="39" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="B4EditPressed:" destination="IBb-ac-I1Z" eventType="touchUpInside" id="BTO-mo-Gbz"/>
+                                                    <segue destination="FM3-hV-Pdt" kind="showDetail" identifier="GoldBlock4Edit" id="9sm-Io-3kF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
@@ -394,6 +438,11 @@
                                     <constraint firstAttribute="height" constant="50" id="C6h-K1-ALN"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrM-Pw-fEj">
+                                <rect key="frame" x="108" y="550" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Homework"/>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="HYO-zC-aeb" firstAttribute="leading" secondItem="hII-8h-Wh4" secondAttribute="leading" constant="16" id="6Qh-23-nQU"/>
@@ -417,7 +466,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN6-n4-qUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="-2006"/>
+            <point key="canvasLocation" x="2500" y="-2027.136431784108"/>
+        </scene>
+        <!--GoB4 View Controller-->
+        <scene sceneID="bj9-oN-gPl">
+            <objects>
+                <viewController id="FM3-hV-Pdt" customClass="GoB4ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pdc-ag-cs1"/>
+                        <viewControllerLayoutGuide type="bottom" id="NH8-d7-9ZS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K12-cB-9Y0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tL-n8-bfg">
+                                <rect key="frame" x="144" y="318" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save 4"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="FM3-hV-Pdt" eventType="touchUpInside" id="pfS-e4-Sav"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="7sp-su-rLe" kind="unwind" identifier="GOB4Unwind" unwindAction="GOB4WithSegue:" id="wVR-FU-fsz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbt-pM-0Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7sp-su-rLe" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3157.5999999999999" y="-1875.1124437781111"/>
+        </scene>
+        <!--GoB3 View Controller-->
+        <scene sceneID="k1O-Nc-8R2">
+            <objects>
+                <viewController id="Obs-gH-tQn" customClass="GoB3ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GXH-Lw-5ol"/>
+                        <viewControllerLayoutGuide type="bottom" id="b8l-Ke-df0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fu7-3G-wN9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm3-cO-tKq">
+                                <rect key="frame" x="142" y="318" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save 3"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="Obs-gH-tQn" eventType="touchUpInside" id="6Ce-cR-sW6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="OOF-RE-m2i" kind="unwind" identifier="GOB3Unwind" unwindAction="GOB3WithSegue:" id="Jrt-2A-HA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4g-Vq-piJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="OOF-RE-m2i" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3160.8000000000002" y="-2546.176911544228"/>
         </scene>
         <!--Green Day Block1 View Controller-->
         <scene sceneID="dZ5-Ao-E1T">
@@ -431,9 +544,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unj-yj-NX6">
-                                <rect key="frame" x="186" y="195" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unj-yj-NX6">
+                                <rect key="frame" x="170" y="286.5" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="greenDayBlock1Exit:" destination="axO-LG-zrC" eventType="touchUpInside" id="LHs-sH-j6l"/>
@@ -442,6 +554,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Unj-yj-NX6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YQP-gP-rfz" secondAttribute="leading" id="6zm-qE-DIE"/>
+                            <constraint firstItem="Unj-yj-NX6" firstAttribute="centerX" secondItem="YQP-gP-rfz" secondAttribute="centerX" id="BC8-x5-dDS"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Unj-yj-NX6" secondAttribute="trailing" id="DkO-7J-tNs"/>
+                            <constraint firstItem="Unj-yj-NX6" firstAttribute="centerY" secondItem="YQP-gP-rfz" secondAttribute="centerY" id="nMc-Wx-PNM"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" id="E0M-gN-wyo">
@@ -474,7 +592,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PsE-iU-O9J" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="axO-LG-zrC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="436" y="-2474"/>
+            <point key="canvasLocation" x="-393" y="-2445"/>
+        </scene>
+        <!--GrB2 View Controller-->
+        <scene sceneID="nla-tk-l5C">
+            <objects>
+                <viewController id="8AY-qn-4cd" customClass="GrB2ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rXi-X6-3HO"/>
+                        <viewControllerLayoutGuide type="bottom" id="WKc-4W-6hi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KIt-CG-xP2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLg-mh-Rlr">
+                                <rect key="frame" x="164" y="286" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save 2"/>
+                                <connections>
+                                    <action selector="saveButtonIsPressed:" destination="9jq-2Z-XTF" eventType="touchUpInside" id="B6l-NZ-FEe"/>
+                                    <action selector="saveButtonIsPressed:" destination="8AY-qn-4cd" eventType="touchUpInside" id="GT9-G6-XJi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="9jq-2Z-XTF" kind="unwind" identifier="GRB2Unwind" unwindAction="GRB2WithSegue:" id="OpZ-mI-7xe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGX-eo-q9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9jq-2Z-XTF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="-1791.4542728635683"/>
         </scene>
         <!--Green Day View Controller-->
         <scene sceneID="dUh-Un-HIx">
@@ -517,13 +668,14 @@
                                                 <state key="normal" title="Edit"/>
                                                 <connections>
                                                     <action selector="editButtonIsPushed:" destination="tZj-ns-IGW" eventType="touchUpInside" id="LdL-w7-laC"/>
+                                                    <segue destination="DUy-PI-xzo" kind="showDetail" identifier="GreenBlock1Edit" id="D5w-vV-zAU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="4VT-hh-DUU" firstAttribute="top" secondItem="FaX-bT-qVK" secondAttribute="bottom" constant="36" id="0JM-jn-Sdu"/>
-                                            <constraint firstItem="FaX-bT-qVK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="e9T-LV-q3H" secondAttribute="leading" symbolic="YES" id="1Wy-0h-Zzt"/>
+                                            <constraint firstItem="FaX-bT-qVK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="e9T-LV-q3H" secondAttribute="leading" constant="20" symbolic="YES" id="1Wy-0h-Zzt"/>
                                             <constraint firstAttribute="bottom" secondItem="X8C-Oy-QMQ" secondAttribute="bottom" constant="19" id="Bn1-XH-eUx"/>
                                             <constraint firstAttribute="trailing" secondItem="nIM-ur-bgg" secondAttribute="trailing" constant="201" id="FWt-Ox-mTg"/>
                                             <constraint firstAttribute="trailing" secondItem="4VT-hh-DUU" secondAttribute="trailing" constant="226" id="Hux-If-oVL"/>
@@ -533,19 +685,52 @@
                                             <constraint firstItem="X8C-Oy-QMQ" firstAttribute="top" secondItem="FaX-bT-qVK" secondAttribute="bottom" constant="12" id="gMz-Ck-Ibe"/>
                                             <constraint firstItem="4VT-hh-DUU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="e9T-LV-q3H" secondAttribute="leading" symbolic="YES" id="s3A-ZO-UIP"/>
                                             <constraint firstItem="X8C-Oy-QMQ" firstAttribute="centerY" secondItem="nIM-ur-bgg" secondAttribute="centerY" id="vpk-nu-Uyj"/>
-                                            <constraint firstItem="X8C-Oy-QMQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="e9T-LV-q3H" secondAttribute="leading" symbolic="YES" id="wc5-8p-q5p"/>
+                                            <constraint firstItem="X8C-Oy-QMQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="e9T-LV-q3H" secondAttribute="leading" constant="20" symbolic="YES" id="wc5-8p-q5p"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wib-CU-Wgs">
                                         <rect key="frame" x="0.0" y="117.5" width="343" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c57-4k-q86">
+                                                <rect key="frame" x="148" y="39" width="30" height="29.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="Block2IsPushed:" destination="tZj-ns-IGW" eventType="touchUpInside" id="Yj5-CM-wLB"/>
+                                                    <segue destination="8AY-qn-4cd" kind="showDetail" identifier="GreenBlock2Edit" id="bmv-hY-K0q"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAO-Fj-Eps">
                                         <rect key="frame" x="0.0" y="235" width="343" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yb-sa-p7H">
+                                                <rect key="frame" x="148" y="38" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="block3Pressed:" destination="tZj-ns-IGW" eventType="touchUpInside" id="a3i-Yo-dLZ"/>
+                                                    <segue destination="doe-Jf-Xw2" kind="showDetail" identifier="GreenBlock3Edit" id="3aj-JN-3cn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vf-SP-uXe">
                                         <rect key="frame" x="0.0" y="352.5" width="343" height="107.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pid-Ip-XX9">
+                                                <rect key="frame" x="148" y="39" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="block4Pressed:" destination="tZj-ns-IGW" eventType="touchUpInside" id="VzH-sR-haT"/>
+                                                    <segue destination="qXc-W2-0FH" kind="showDetail" identifier="GreenBlock4Edit" id="bCI-9S-qiX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.86200484769999997" green="0.86200484769999997" blue="0.86200484769999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
@@ -599,12 +784,139 @@
                         <outlet property="blockThree" destination="mAO-Fj-Eps" id="Maf-R5-fIr"/>
                         <outlet property="blockTwo" destination="Wib-CU-Wgs" id="wYU-fr-DAD"/>
                         <outlet property="homeworkButton" destination="EQX-R5-p6z" id="Ia1-KP-EOS"/>
-                        <segue destination="DUy-PI-xzo" kind="showDetail" identifier="GreenBlock1Edit" id="Klw-5f-4tG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzu-2G-U19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="-2006"/>
+            <point key="canvasLocation" x="329" y="-2027"/>
+        </scene>
+        <!--GrB4 View Controller-->
+        <scene sceneID="HNj-W9-Bvt">
+            <objects>
+                <viewController id="qXc-W2-0FH" customClass="GrB4ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AGG-CC-GpC"/>
+                        <viewControllerLayoutGuide type="bottom" id="PpL-RC-DYi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2m6-QC-lZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RV-CF-TCm">
+                                <rect key="frame" x="154" y="286" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save 4"/>
+                                <connections>
+                                    <action selector="saveButtonIsPressed:" destination="qXc-W2-0FH" eventType="touchUpInside" id="eoH-YJ-zwE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Dwe-vE-cS3" kind="unwind" identifier="GRB4Unwind" unwindAction="GRB4WithSegue:" id="Agk-lU-8p1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VwI-gd-oFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Dwe-vE-cS3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-1700.5997001499252"/>
+        </scene>
+        <!--GoB2 View Controller-->
+        <scene sceneID="ble-iz-yna">
+            <objects>
+                <viewController id="gwF-Z3-gCL" customClass="GoB2ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9G9-So-sV4"/>
+                        <viewControllerLayoutGuide type="bottom" id="H0r-lW-gpO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SMK-2v-Mzw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP5-Na-mZd">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save 2"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="gwF-Z3-gCL" eventType="touchUpInside" id="Ini-1c-vQW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="01M-yY-rcH" kind="unwind" identifier="GOB2Unwind" unwindAction="GOB2WithSegue:" id="7VP-uD-1tH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wr6-oP-eRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="01M-yY-rcH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="-1734"/>
+        </scene>
+        <!--GrB3 View Controller-->
+        <scene sceneID="qPo-7c-XTb">
+            <objects>
+                <viewController id="doe-Jf-Xw2" customClass="GrB3ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PxH-mp-7h6"/>
+                        <viewControllerLayoutGuide type="bottom" id="GNw-zj-BHv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MuK-tK-mlp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbz-OM-L8s">
+                                <rect key="frame" x="154" y="286" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save 3"/>
+                                <connections>
+                                    <action selector="saveButtonIsPressed:" destination="doe-Jf-Xw2" eventType="touchUpInside" id="arM-ts-QMN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="GCR-vP-ZqV" kind="unwind" identifier="GRB3Unwind" unwindAction="GRB3WithSegue:" id="bpt-qm-ije"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaA-sv-hIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GCR-vP-ZqV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1013.6" y="-2426.5367316341831"/>
+        </scene>
+        <!--GoB1 View Controller-->
+        <scene sceneID="0om-tO-ui6">
+            <objects>
+                <viewController id="DsG-dW-Zeh" customClass="GoB1ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X6U-9r-gmz"/>
+                        <viewControllerLayoutGuide type="bottom" id="sBQ-eX-zZp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x5H-xN-uUP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C18-Nn-nC8">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save 1"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="DsG-dW-Zeh" eventType="touchUpInside" id="amY-aJ-rc4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="FT0-r3-W5G" kind="unwind" identifier="GOB1Unwind" unwindAction="GOB1WithSegue:" id="xq8-Sb-Dyz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BY3-lr-3zh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FT0-r3-W5G" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="-2419"/>
         </scene>
     </scenes>
     <resources>

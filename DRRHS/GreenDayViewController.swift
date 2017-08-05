@@ -3,7 +3,7 @@
 //  DRRHS
 //
 //  Created by Sam DuBois on 8/3/17.
-//  Copyright © 2017 Joshua Holme. All rights reserved.
+//  Copyright © 2017 Holme Computer. All rights reserved.
 //
 
 import UIKit
@@ -16,12 +16,34 @@ class GreenDayViewController: UIViewController {
     @IBOutlet weak var blockFour: UIView!
     @IBOutlet weak var homeworkButton: UIView!
     
+    //Block 1 Edit button and Save button
     @IBAction func editButtonIsPushed(_ sender: Any) {
         self.performSegue(withIdentifier: "GreenBlock1Edit", sender: self)
     }
     @IBAction func GRB1(segue:UIStoryboardSegue)
     {
-        
+    }
+    
+    //Block 2 Edit Button and Save Button
+    @IBAction func Block2IsPushed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GreenBlock2Edit", sender: self)
+    }
+    @IBAction func GRB2(segue:UIStoryboardSegue)
+    {
+    }
+    //Block 3 Edit Button and Save Button
+    @IBAction func block3Pressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GreenBlock3Edit", sender: self)
+    }
+    @IBAction func GRB3(segue:UIStoryboardSegue)
+    {
+    }
+    //Block 4 Edit Button and Save Button
+    @IBAction func block4Pressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GreenBlock4Edit", sender: self)
+    }
+    @IBAction func GRB4(segue:UIStoryboardSegue)
+    {
     }
     
     

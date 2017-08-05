@@ -3,7 +3,7 @@
 //  DRRHS
 //
 //  Created by Joshua Holme on 7/14/17.
-//  Copyright © 2017 Joshua Holme. All rights reserved.
+//  Copyright © 2017 Holme Computer. All rights reserved.
 //
 
 import UIKit

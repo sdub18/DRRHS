@@ -1,20 +1,18 @@
 //
-//  GreenDayBlock1ViewController.swift
+//  GrB3ViewController.swift
 //  DRRHS
 //
-//  Created by Sam DuBois on 8/4/17.
+//  Created by Sam DuBois on 8/5/17.
 //  Copyright © 2017 Holme Computer. All rights reserved.
 //
 
 import UIKit
 
-class GreenDayBlock1ViewController: UIViewController {
+class GrB3ViewController: UIViewController {
 
-    @IBAction func saveButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "GRB1Unwind", sender: self)
-    
+    @IBAction func saveButtonIsPressed(_ sender: Any) {
+        performSegue(withIdentifier: "GRB3Unwind", sender: self)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
