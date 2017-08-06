@@ -16,12 +16,18 @@ class GreenDayViewController: UIViewController {
     @IBOutlet weak var blockFour: UIView!
     @IBOutlet weak var homeworkButton: UIView!
     
-    //Block 1 Edit button and Save button
+//Block 1 Edit button and Save button
+    @IBOutlet weak var B1ClassLabel: UILabel!
+        var B1ClassLabelText = String()
     @IBAction func editButtonIsPushed(_ sender: Any) {
         self.performSegue(withIdentifier: "GreenBlock1Edit", sender: self)
     }
-    @IBAction func GRB1(segue:UIStoryboardSegue)
-    {
+    @IBAction func GRB1(_ sender: UIStoryboardSegue){
+        if sender.source is GreenDayBlock1ViewController {
+            if let senderVC = sender.source as? GreenDayBlock1ViewController {
+                B1ClassLabel.text = senderVC.classText
+            }
+        }
     }
     
     //Block 2 Edit Button and Save Button

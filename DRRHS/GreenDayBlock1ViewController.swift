@@ -10,6 +10,8 @@ import UIKit
 
 class GreenDayBlock1ViewController: UIViewController {
 
+    @IBOutlet weak var classEditTextBox: UITextField!
+    var classText: String!
     @IBAction func saveButton(_ sender: Any) {
         self.performSegue(withIdentifier: "GRB1Unwind", sender: self)
     
@@ -17,6 +19,7 @@ class GreenDayBlock1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.classEditTextBox.delegate = self as? UITextFieldDelegate
 
         // Do any additional setup after loading the view.
     }
@@ -25,8 +28,15 @@ class GreenDayBlock1ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let newClassTextField = classEditTextBox.text {
+            classText = newClassTextField
+        }
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -36,5 +46,6 @@ class GreenDayBlock1ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }
