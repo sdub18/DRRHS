@@ -18,7 +18,11 @@ class GreenDayViewController: UIViewController {
     
 //Block 1 Edit button and Save button
     @IBOutlet weak var B1ClassLabel: UILabel!
-        var B1ClassLabelText = String()
+    @IBOutlet weak var B1TeacherLabel: UILabel!
+    @IBOutlet weak var B1RoomLabel: UILabel!
+    
+    
+    //This segues to the next view controller
     @IBAction func editButtonIsPushed(_ sender: Any) {
         self.performSegue(withIdentifier: "GreenBlock1Edit", sender: self)
     }
@@ -26,6 +30,8 @@ class GreenDayViewController: UIViewController {
         if sender.source is GreenDayBlock1ViewController {
             if let senderVC = sender.source as? GreenDayBlock1ViewController {
                 B1ClassLabel.text = senderVC.classText
+                B1TeacherLabel.text = senderVC.teacherTextField
+                B1RoomLabel.text = senderVC.roomTextField
             }
         }
     }
