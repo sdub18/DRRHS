@@ -10,6 +10,13 @@ import UIKit
 
 class GrB4ViewController: UIViewController {
 
+    @IBOutlet weak var ClassTextField: UITextField!
+    var classText: String!
+    @IBOutlet weak var TeacherTextField: UITextField!
+    var teacherText: String!
+    @IBOutlet weak var RoomTextField: UITextField!
+    var roomText: String!
+    
     @IBAction func saveButtonIsPressed(_ sender: Any) {
         performSegue(withIdentifier: "GRB4Unwind", sender: self)
     }
@@ -23,7 +30,18 @@ class GrB4ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Information for teacher Class Edit
+        if let newClassTextField = ClassTextField.text {
+            classText = newClassTextField
+        }
+        if let newTeacherTextField = TeacherTextField.text {
+            teacherText = newTeacherTextField
+        }
+        if let newRoomNumberTextField = RoomTextField.text {
+            roomText = newRoomNumberTextField
+        }
+    }
 
     /*
     // MARK: - Navigation

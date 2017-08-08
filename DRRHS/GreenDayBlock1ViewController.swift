@@ -39,7 +39,6 @@ class GreenDayBlock1ViewController: UIViewController {
         if let newClassTextField = classEditTextBox.text {
             classText = newClassTextField
         }
-        //Information for Teacher Edit
         if let newTeacherTextField = teacherNameTextField.text {
             teacherTextField = newTeacherTextField
         }
