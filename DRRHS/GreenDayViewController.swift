@@ -187,7 +187,8 @@ class GreenDayViewController: UIViewController {
         B1AddView.layer.borderWidth = 2.5
         B1AddView.layer.borderColor = UIColor.white.cgColor
     
-        B1AddView.layer.cornerRadius = 22
+        B1AddView.layer.cornerRadius = 37.5
+        
         B1AddView.layer.masksToBounds = true
       
     }
