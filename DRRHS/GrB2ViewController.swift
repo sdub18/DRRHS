@@ -8,14 +8,15 @@
 
 import UIKit
 
+var GrB2classText: String!
+var GrB2teacherText: String!
+var GrB2roomText: String!
+
 class GrB2ViewController: UIViewController {
     
     @IBOutlet weak var ClassTextField: UITextField!
-    var classText: String!
     @IBOutlet weak var TeacherTextField: UITextField!
-    var teacherText: String!
     @IBOutlet weak var RoomTextField: UITextField!
-    var roomText: String!
     
     //Save Button to save Data and exit application (Not back button)
     @IBAction func saveButtonPressed(_ sender: Any) {
@@ -36,14 +37,14 @@ class GrB2ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Information for teacher Class Edit
         if let newClassTextField = ClassTextField.text {
-            classText = newClassTextField
+            GrB2classText = newClassTextField
         }
         //Information for Teacher Edit
         if let newTeacherTextField = TeacherTextField.text {
-            teacherText = newTeacherTextField
+            GrB2teacherText = newTeacherTextField
         }
         if let newRoomNumberTextField = RoomTextField.text {
-            roomText = newRoomNumberTextField
+            GrB2roomText = newRoomNumberTextField
         }
 
     }

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* GrSettingsViewController.swift */; };
 		313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */; };
 		313D4AD71F342668002FAFA3 /* GoldDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */; };
-		3160B9CF1F35746B00EA532B /* GreenDayBlock1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* GreenDayBlock1ViewController.swift */; };
+		3160B9CF1F35746B00EA532B /* GrB1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */; };
 		3182B9871F36107F000F92DD /* GrB2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9861F36107F000F92DD /* GrB2ViewController.swift */; };
 		3182B9891F3615FB000F92DD /* GrB3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9881F3615FB000F92DD /* GrB3ViewController.swift */; };
 		3182B98B1F3617D5000F92DD /* GrB4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B98A1F3617D5000F92DD /* GrB4ViewController.swift */; };
@@ -50,9 +51,10 @@
 
 /* Begin PBXFileReference section */
 		1596F0A0424EE2DB3260BE82 /* Pods_DRRHSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311E2F801F4347790098B355 /* GrSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrSettingsViewController.swift; sourceTree = "<group>"; };
 		313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayViewController.swift; sourceTree = "<group>"; };
 		313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldDayViewController.swift; sourceTree = "<group>"; };
-		3160B9CE1F35746B00EA532B /* GreenDayBlock1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayBlock1ViewController.swift; sourceTree = "<group>"; };
+		3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB1ViewController.swift; sourceTree = "<group>"; };
 		3182B9861F36107F000F92DD /* GrB2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB2ViewController.swift; sourceTree = "<group>"; };
 		3182B9881F3615FB000F92DD /* GrB3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB3ViewController.swift; sourceTree = "<group>"; };
 		3182B98A1F3617D5000F92DD /* GrB4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB4ViewController.swift; sourceTree = "<group>"; };
@@ -157,11 +159,12 @@
 				69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */,
 				699A699D1F19816000E9CAD9 /* Main.storyboard */,
 				313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */,
+				311E2F801F4347790098B355 /* GrSettingsViewController.swift */,
 				313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */,
 				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
 				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
 				699A69A51F19816000E9CAD9 /* Info.plist */,
-				3160B9CE1F35746B00EA532B /* GreenDayBlock1ViewController.swift */,
+				3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */,
 				3182B9861F36107F000F92DD /* GrB2ViewController.swift */,
 				3182B9881F3615FB000F92DD /* GrB3ViewController.swift */,
 				3182B98A1F3617D5000F92DD /* GrB4ViewController.swift */,
@@ -493,10 +496,11 @@
 				69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */,
 				3182B98F1F36324D000F92DD /* GoB2ViewController.swift in Sources */,
 				699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */,
+				311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */,
 				313D4AD71F342668002FAFA3 /* GoldDayViewController.swift in Sources */,
 				3182B9891F3615FB000F92DD /* GrB3ViewController.swift in Sources */,
 				3182B98B1F3617D5000F92DD /* GrB4ViewController.swift in Sources */,
-				3160B9CF1F35746B00EA532B /* GreenDayBlock1ViewController.swift in Sources */,
+				3160B9CF1F35746B00EA532B /* GrB1ViewController.swift in Sources */,
 				3182B98D1F363233000F92DD /* GoB1ViewController.swift in Sources */,
 				3182B9871F36107F000F92DD /* GrB2ViewController.swift in Sources */,
 			);

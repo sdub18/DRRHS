@@ -17,33 +17,21 @@ class GoldDayViewController: UIViewController {
     @IBOutlet weak var homeworkButton: UIView!
     
     //Block 1 Edit and Save Button
-    @IBAction func B1EditPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoldBlock1Edit", sender: self)
-    }
     @IBAction func GOB1(segue:UIStoryboardSegue)
     {
     }
     
     //Block 2 Edit and Save Button
-    @IBAction func B2EditPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoldBlock2Edit", sender: self)
-    }
     @IBAction func GOB2(segue:UIStoryboardSegue)
     {
     }
     
     //Block 3 Edit and Save Button
-    @IBAction func B3EditPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoldBlock3Edit", sender: self)
-    }
     @IBAction func GOB3(segue:UIStoryboardSegue)
     {
     }
     
     //Block 4 Edit and Save Button
-    @IBAction func B4EditPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoldBlock4Edit", sender: self)
-    }
     @IBAction func GOB4(segue:UIStoryboardSegue)
     {
     }

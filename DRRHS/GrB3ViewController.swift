@@ -8,6 +8,10 @@
 
 import UIKit
 
+var GrB3classText: String!
+var GrB3teacherText: String!
+var GrB3roomText: String!
+
 class GrB3ViewController: UIViewController {
     
     @IBOutlet weak var ClassTextField: UITextField!
@@ -35,13 +39,13 @@ class GrB3ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Information for teacher Class Edit
         if let newClassTextField = ClassTextField.text {
-            classText = newClassTextField
+            GrB3classText = newClassTextField
         }
         if let newTeacherTextField = TeacherTextField.text {
-            teacherText = newTeacherTextField
+            GrB3teacherText = newTeacherTextField
         }
         if let newRoomNumberTextField = RoomTextField.text {
-            roomText = newRoomNumberTextField
+            GrB3roomText = newRoomNumberTextField
         }
     }
     

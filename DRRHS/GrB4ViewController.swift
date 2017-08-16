@@ -8,14 +8,15 @@
 
 import UIKit
 
+var GrB4classText: String!
+var GrB4teacherText: String!
+var GrB4roomText: String!
+
 class GrB4ViewController: UIViewController {
 
     @IBOutlet weak var ClassTextField: UITextField!
-    var classText: String!
     @IBOutlet weak var TeacherTextField: UITextField!
-    var teacherText: String!
     @IBOutlet weak var RoomTextField: UITextField!
-    var roomText: String!
     
     @IBAction func saveButtonIsPressed(_ sender: Any) {
         performSegue(withIdentifier: "GRB4Unwind", sender: self)
@@ -33,13 +34,13 @@ class GrB4ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Information for teacher Class Edit
         if let newClassTextField = ClassTextField.text {
-            classText = newClassTextField
+            GrB4classText = newClassTextField
         }
         if let newTeacherTextField = TeacherTextField.text {
-            teacherText = newTeacherTextField
+            GrB4teacherText = newTeacherTextField
         }
         if let newRoomNumberTextField = RoomTextField.text {
-            roomText = newRoomNumberTextField
+            GrB4roomText = newRoomNumberTextField
         }
     }
 
