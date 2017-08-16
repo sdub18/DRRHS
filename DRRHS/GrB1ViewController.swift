@@ -28,6 +28,10 @@ class GrB1ViewController: UIViewController {
     
     }
     
+    @IBAction func dismissPopUp(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

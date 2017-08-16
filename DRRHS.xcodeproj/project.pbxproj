@@ -153,17 +153,15 @@
 		699A69961F19816000E9CAD9 /* DRRHS */ = {
 			isa = PBXGroup;
 			children = (
+				699A699D1F19816000E9CAD9 /* Main.storyboard */,
+				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
 				699A69971F19816000E9CAD9 /* AppDelegate.swift */,
 				699A69991F19816000E9CAD9 /* FirstViewController.swift */,
 				699A699B1F19816000E9CAD9 /* SecondViewController.swift */,
 				69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */,
-				699A699D1F19816000E9CAD9 /* Main.storyboard */,
 				313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */,
 				311E2F801F4347790098B355 /* GrSettingsViewController.swift */,
 				313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */,
-				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
-				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
-				699A69A51F19816000E9CAD9 /* Info.plist */,
 				3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */,
 				3182B9861F36107F000F92DD /* GrB2ViewController.swift */,
 				3182B9881F3615FB000F92DD /* GrB3ViewController.swift */,
@@ -172,6 +170,8 @@
 				3182B98E1F36324D000F92DD /* GoB2ViewController.swift */,
 				3182B9901F36326E000F92DD /* GoB3ViewController.swift */,
 				3182B9921F36327D000F92DD /* GoB4ViewController.swift */,
+				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
+				699A69A51F19816000E9CAD9 /* Info.plist */,
 			);
 			path = DRRHS;
 			sourceTree = "<group>";
