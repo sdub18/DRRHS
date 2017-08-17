@@ -36,6 +36,7 @@ class GreenDayViewController: UIViewController {
     @IBOutlet weak var blockThree: UIView!
     @IBOutlet weak var blockFour: UIView!
     @IBOutlet weak var homeworkButton: UIView!
+    @IBOutlet weak var homeworkButtonPressed: UIButton!
     @IBOutlet weak var B1AddView: UIView!
     
     
@@ -59,8 +60,41 @@ class GreenDayViewController: UIViewController {
     @IBOutlet weak var B4TeacherLabel: UILabel!
     @IBOutlet weak var B4RoomLabel: UILabel!
     
+    @IBAction func B1AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GrB1addH", sender: self)
+        
+        GrhomeworkTitleLabel = GrB1ClassLabelField
+    }
     
-                                                                //VIEW DID LOAD!!!!!!!!!!!
+    @IBAction func B2AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GrB2addH", sender: self)
+        GrhomeworkTitleLabel = GrB2ClassLabelField
+    }
+    
+    @IBAction func B3AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GrB3addH", sender: self)
+        GrhomeworkTitleLabel = GrB3ClassLabelField
+    }
+    
+    @IBAction func B4AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GrB4addH", sender: self)
+        GrhomeworkTitleLabel = GrB4ClassLabelField
+    }
+    
+    @IBAction func GRHW(_ sender: UIStoryboardSegue){
+        if sender.source is GrAddHWViewController {
+            
+            
+            
+        }
+    }
+    @IBAction func GRHWVIEW(_ sender: UIStoryboardSegue){
+        if sender.source is GrAddHWViewController {
+            
+        }
+    }
+    
+    //VIEW DID LOAD!!!!!!!!!!!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -159,36 +193,39 @@ class GreenDayViewController: UIViewController {
         let B4ClassroomLabelDefault = UserDefaults.standard
         if (B4ClassroomLabelDefault.value(forKey: "B4ClassroomLabel") != nil){
             GrB4ClassLabelSaved = (B4ClassroomLabelDefault.value(forKey: "B4ClassroomLabel") as! NSString) as String
-            B4ClassLabel.text = GrB4ClassLabelSaved
+            GrB4ClassLabelField = GrB4ClassLabelSaved
         }
         
         //Teacher Core Data:
         let B4TeacherLabelDefault = UserDefaults.standard
         if (B4TeacherLabelDefault.value(forKey: "B4TeacherLabel") != nil){
             GrB4TeacherLabelSaved = (B4TeacherLabelDefault.value(forKey: "B4TeacherLabel") as! NSString) as String
-            B4TeacherLabel.text = GrB4TeacherLabelSaved
+            GrB4TeacherLabelField = GrB4TeacherLabelSaved
         }
         
         //Room Core Data:
         let B4RoomLabelDefault = UserDefaults.standard
         if (B4RoomLabelDefault.value(forKey: "B4RoomLabel") != nil){
             GrB4RoomLabelSaved = (B4RoomLabelDefault.value(forKey: "B4RoomLabel") as! NSString) as String
-            B4RoomLabel.text = GrB4RoomLabelSaved
+            GrB4RoomLabelField = GrB4RoomLabelSaved
         }
         
 //Homework Button
+      
+        
         homeworkButton.layer.borderWidth = 2.5
         homeworkButton.layer.borderColor = UIColor(red: (220/255.0), green: (220/255.0), blue: (220/255.0), alpha: 1.0).cgColor
         //Round Corners
         homeworkButton.layer.cornerRadius = 20
         homeworkButton.layer.masksToBounds = true
         
+        //Homework Button Label is autosized to fit different iPhones
+        homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
+        homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
+        
 //Add Button
         B1AddView.layer.borderWidth = 2.5
         B1AddView.layer.borderColor = UIColor.white.cgColor
-    
-        B1AddView.layer.cornerRadius = 22
-        B1AddView.layer.masksToBounds = true
       
     }
 //Refreshes Labels so it will be updated

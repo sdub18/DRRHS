@@ -19,8 +19,6 @@ class GrB1ViewController: UIViewController {
     @IBOutlet weak var classEditTextBox: UITextField!
     @IBOutlet weak var teacherNameTextField: UITextField!
     @IBOutlet weak var roomNumberTextField: UITextField!
-    @IBOutlet weak var homeworkView: UIView!
-    @IBOutlet weak var homeworkTextField: UITextView!
     
     //IB function to unwind the segue back to what it was before
     @IBAction func saveButton(_ sender: Any) {
@@ -30,24 +28,8 @@ class GrB1ViewController: UIViewController {
     
     }
     
-    @IBAction func dismissPopUp(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeworkView.layer.borderWidth = 5
-        homeworkView.layer.borderColor = UIColor(red: (139/255.0), green: (141/255.0), blue: (145/255.0), alpha: 1.0).cgColor
-        homeworkView.layer.cornerRadius = 22
-        homeworkView.layer.masksToBounds = true
-        
-        homeworkTextField.layer.borderWidth = 1
-        homeworkTextField.layer.borderColor = UIColor(red: (139/255.0), green: (141/255.0), blue: (145/255.0), alpha: 1.0).cgColor
-        
-        
-        homeworkTextField.layer.cornerRadius = 9
-        homeworkTextField.layer.masksToBounds = true
-        
         
         // Do any additional setup after loading the view.
     }
@@ -73,7 +55,6 @@ class GrB1ViewController: UIViewController {
    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-        
         
     }
     /*
