@@ -13,6 +13,7 @@
 		311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* GrSettingsViewController.swift */; };
 		313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */; };
 		313D4AD71F342668002FAFA3 /* GoldDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */; };
+		3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */; };
 		3160B9CF1F35746B00EA532B /* GrB1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */; };
 		3182B9871F36107F000F92DD /* GrB2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9861F36107F000F92DD /* GrB2ViewController.swift */; };
 		3182B9891F3615FB000F92DD /* GrB3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9881F3615FB000F92DD /* GrB3ViewController.swift */; };
@@ -60,6 +61,7 @@
 		311E2F801F4347790098B355 /* GrSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrSettingsViewController.swift; sourceTree = "<group>"; };
 		313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayViewController.swift; sourceTree = "<group>"; };
 		313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldDayViewController.swift; sourceTree = "<group>"; };
+		3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRRHS.xcdatamodel; sourceTree = "<group>"; };
 		3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB1ViewController.swift; sourceTree = "<group>"; };
 		3182B9861F36107F000F92DD /* GrB2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB2ViewController.swift; sourceTree = "<group>"; };
 		3182B9881F3615FB000F92DD /* GrB3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB3ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		699A698B1F19816000E9CAD9 = {
 			isa = PBXGroup;
 			children = (
+				3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */,
 				699A69961F19816000E9CAD9 /* DRRHS */,
 				699A69AD1F19816000E9CAD9 /* DRRHSTests */,
 				699A69B81F19816000E9CAD9 /* DRRHSUITests */,
@@ -501,6 +504,7 @@
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */,
+				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
 				31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */,
 				3182B9911F36326E000F92DD /* GoB3ViewController.swift in Sources */,
 				69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */,
@@ -808,6 +812,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */,
+			);
+			currentVersion = 3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */;
+			path = DRRHS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 699A698C1F19816000E9CAD9 /* Project object */;
 }
