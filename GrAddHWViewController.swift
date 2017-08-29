@@ -14,7 +14,7 @@ var GrHWassignment: String = "Pizza"
 var GrClassroomLabel: String!
 var GrDueDateLabel: String!
 
-class GrAddHWViewController: UIViewController {
+class GrAddHWViewController: UIViewController, UITextFieldDelegate{
 
     //Outlets to the different peices on the app
     @IBOutlet weak var TitleLabel: UILabel!
@@ -74,6 +74,12 @@ class GrAddHWViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        self.view.endEditing(true)
+        return true
     }
 
 

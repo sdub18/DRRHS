@@ -22,6 +22,9 @@
 		3182B98F1F36324D000F92DD /* GoB2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B98E1F36324D000F92DD /* GoB2ViewController.swift */; };
 		3182B9911F36326E000F92DD /* GoB3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9901F36326E000F92DD /* GoB3ViewController.swift */; };
 		3182B9931F36327D000F92DD /* GoB4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9921F36327D000F92DD /* GoB4ViewController.swift */; };
+		31BFFB4F1F5503AE009C3D33 /* GoSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB4E1F5503AE009C3D33 /* GoSettingsViewController.swift */; };
+		31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */; };
+		31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */; };
 		699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69971F19816000E9CAD9 /* AppDelegate.swift */; };
 		699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69991F19816000E9CAD9 /* FirstViewController.swift */; };
 		699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A699B1F19816000E9CAD9 /* SecondViewController.swift */; };
@@ -72,6 +75,9 @@
 		3182B98E1F36324D000F92DD /* GoB2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoB2ViewController.swift; sourceTree = "<group>"; };
 		3182B9901F36326E000F92DD /* GoB3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoB3ViewController.swift; sourceTree = "<group>"; };
 		3182B9921F36327D000F92DD /* GoB4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoB4ViewController.swift; sourceTree = "<group>"; };
+		31BFFB4E1F5503AE009C3D33 /* GoSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoSettingsViewController.swift; sourceTree = "<group>"; };
+		31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewHWViewController.swift; sourceTree = "<group>"; };
+		31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAddHWViewController.swift; sourceTree = "<group>"; };
 		3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHS/Pods-DRRHS.debug.xcconfig"; sourceTree = "<group>"; };
 		699A69941F19816000E9CAD9 /* DRRHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRRHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +171,9 @@
 				3182B98E1F36324D000F92DD /* GoB2ViewController.swift */,
 				3182B9901F36326E000F92DD /* GoB3ViewController.swift */,
 				3182B9921F36327D000F92DD /* GoB4ViewController.swift */,
+				31BFFB4E1F5503AE009C3D33 /* GoSettingsViewController.swift */,
+				31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */,
+				31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */,
 			);
 			path = "Gold Day Schedule";
 			sourceTree = "<group>";
@@ -324,7 +333,7 @@
 				TargetAttributes = {
 					699A69931F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = TGLE8RZWF5;
+						DevelopmentTeam = XLEYC29AG5;
 						ProvisioningStyle = Automatic;
 					};
 					699A69A91F19816000E9CAD9 = {
@@ -534,6 +543,7 @@
 				3182B9931F36327D000F92DD /* GoB4ViewController.swift in Sources */,
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
+				31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
@@ -548,8 +558,10 @@
 				3182B9891F3615FB000F92DD /* GrB3ViewController.swift in Sources */,
 				3182B98B1F3617D5000F92DD /* GrB4ViewController.swift in Sources */,
 				3160B9CF1F35746B00EA532B /* GrB1ViewController.swift in Sources */,
+				31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */,
 				31111F1F1F45F51B00AA204F /* GrViewHWTableViewCell.swift in Sources */,
 				3182B98D1F363233000F92DD /* GoB1ViewController.swift in Sources */,
+				31BFFB4F1F5503AE009C3D33 /* GoSettingsViewController.swift in Sources */,
 				31111F171F45D2A100AA204F /* GrAddHWViewController.swift in Sources */,
 				3182B9871F36107F000F92DD /* GrB2ViewController.swift in Sources */,
 			);
@@ -716,7 +728,7 @@
 			baseConfigurationReference = 3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -732,7 +744,7 @@
 			baseConfigurationReference = F14BD033C7CCD2CEA6B83311 /* Pods-DRRHS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
