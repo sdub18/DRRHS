@@ -8,17 +8,22 @@
 
 import UIKit
 
-var name = ""
-
 class DirectoryTC: UITableViewController, UISearchResultsUpdating {
     
-    var teachers = ["Mr. Delano", "Mr. Antani", "Mr. Botelho", "Mr. Braga"]
-    var filteredTeachers = [String]()
+    var teachers = [
+        Teacher(name:"Brandon Delano", email:"BDelano@drregional.org", roomNumber: "128", website: "drregional.org"),
+        Teacher(name:"Joeseph Botelho", email:"JBotelho@drregional.org", roomNumber: "220", website: "drregional.org")
+    ]
+    var filteredTeachers = [Teacher]()
+    
+    var selectedTeacher = Teacher(name: "", email: "", roomNumber: "", website: "")
     
     var searchController: UISearchController!
     var resultsController = UITableViewController()
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
+        
         super.viewDidLoad()
         
         self.resultsController.tableView.dataSource = self
@@ -33,8 +38,9 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         
-        self.filteredTeachers = self.teachers.filter{ (teacher:String) -> Bool in
-            if teacher.lowercased().contains(self.searchController.searchBar.text!.lowercased())
+        self.filteredTeachers = self.teachers.filter{ (teacher:Teacher) -> Bool in
+            
+            if teacher.name.lowercased().contains(self.searchController.searchBar.text!.lowercased())
             {
                 return true
             }else
@@ -44,11 +50,13 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         }
         
         self.resultsController.tableView.reloadData()
+        
     }
     
     // MARK: - Table view data source
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         
         if tableView == self.tableView
         {
@@ -65,31 +73,49 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
     {
         let cell = UITableViewCell()
         
+        let teacher : Teacher
+        
         if tableView == self.tableView
         {
-            cell.textLabel?.text = self.teachers[indexPath.row]
+            teacher = teachers[indexPath.row]
         }else
         {
-            cell.textLabel?.text = self.filteredTeachers[indexPath.row]
+            teacher = filteredTeachers[indexPath.row]
         }
+        
+        cell.textLabel?.text = teacher.name
         
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let teacher : Teacher
         
         if tableView == self.tableView
         {
-            name = self.teachers[indexPath.row]
+            teacher = teachers[indexPath.row]
+            selectedTeacher = teacher
         }else
         {
-            name = self.filteredTeachers[indexPath.row]
+            teacher = filteredTeachers[indexPath.row]
+            selectedTeacher = teacher
         }
+        
         
         self.performSegue(withIdentifier: "teacherDetail", sender: self)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        
+        let vc = segue.destination as! DirectoryDetailVC
+        
+        vc.name = selectedTeacher.name
+        vc.email = selectedTeacher.email
+        vc.roomNumber = selectedTeacher.roomNumber
+        vc.website = selectedTeacher.website
         
     }
     
