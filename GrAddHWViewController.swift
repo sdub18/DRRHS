@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 var GrhomeworkTitleLabel = String()
-var GrHWassignment: String!
+var GrHWassignment: String = "Pizza"
 var GrClassroomLabel: String!
 var GrDueDateLabel: String!
 
@@ -22,10 +23,19 @@ class GrAddHWViewController: UIViewController {
     @IBOutlet weak var DueDateTextField: UITextField!
     
     @IBAction func saveButtonPressed(_ sender: Any) {
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let employee = NSEntityDescription.insertNewObject(forEntityName: "GreenDaySchedule", into: context) as! GreenDaySchedule
+        employee.homework = GrHWassignment
+        employee.dueDate = GrDueDateLabel
+        employee.classTitle = GrhomeworkTitleLabel
+            
+            //Save the data
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+  
         self.performSegue(withIdentifier: "GRHWUnwind", sender: self)
-        GrHomeworkAssignments.append(GrHWassignment)
-        GrClassRoomNames.append(GrhomeworkTitleLabel)
-        GrDueDates.append(GrDueDateLabel)
+        
         
     }
     override func viewDidLoad() {
