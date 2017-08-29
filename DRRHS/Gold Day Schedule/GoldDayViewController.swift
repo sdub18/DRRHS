@@ -8,82 +8,279 @@
 
 import UIKit
 
-class GoldDayViewController: UIViewController {
+//Block 1 Global Variables
+var GoB1ClassLabelField = String()
+var GoB1TeacherLabelField = String()
+var GoB1RoomLabelField = String()
 
+//Block 2 Global Variables
+var GoB2ClassLabelField = String()
+var GoB2TeacherLabelField = String()
+var GoB2RoomLabelField = String()
+
+//Block 3 Global Variables
+var GoB3ClassLabelField = String()
+var GoB3TeacherLabelField = String()
+var GoB3RoomLabelField = String()
+
+//Block 4 Global Variables
+var GoB4ClassLabelField = String()
+var GoB4TeacherLabelField = String()
+var GoB4RoomLabelField = String()
+
+class GoldDayViewController: UIViewController {
+    
+    //View Outlets that setup the look of the View Controller
     @IBOutlet weak var blockOne: UIView!
     @IBOutlet weak var blockTwo: UIView!
     @IBOutlet weak var blockThree: UIView!
     @IBOutlet weak var blockFour: UIView!
     @IBOutlet weak var homeworkButton: UIView!
+    @IBOutlet weak var homeworkButtonPressed: UIButton!
+    @IBOutlet weak var B1AddView: UIView!
+    @IBOutlet weak var B2AddView: UIButton!
+    @IBOutlet weak var B3AddView: UIButton!
+    @IBOutlet weak var B4AddView: UIButton!
     
-    //Block 1 Edit and Save Button
-    @IBAction func GOB1(segue:UIStoryboardSegue)
-    {
+    
+    
+    //Block 1 IB Outlet Lables
+    @IBOutlet weak var B1ClassLabel: UILabel!
+    @IBOutlet weak var B1TeacherLabel: UILabel!
+    @IBOutlet weak var B1RoomLabel: UILabel!
+    
+    //Block 2 Outlet Labels
+    @IBOutlet weak var B2ClassLabel: UILabel!
+    @IBOutlet weak var B2TeacherLabel: UILabel!
+    @IBOutlet weak var B2RoomLabel: UILabel!
+    
+    //Block 3 Save Button
+    @IBOutlet weak var B3ClassLabel: UILabel!
+    @IBOutlet weak var B3TeacherLabel: UILabel!
+    @IBOutlet weak var B3RoomLabel: UILabel!
+    
+    //Block 4 Save Button
+    @IBOutlet weak var B4ClassLabel: UILabel!
+    @IBOutlet weak var B4TeacherLabel: UILabel!
+    @IBOutlet weak var B4RoomLabel: UILabel!
+    
+    @IBAction func B1AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GoB1addH", sender: self)
+        
+        GohomeworkTitleLabel = GoB1ClassLabelField
     }
     
-    //Block 2 Edit and Save Button
-    @IBAction func GOB2(segue:UIStoryboardSegue)
-    {
+    @IBAction func B2AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GoB2addH", sender: self)
+        GohomeworkTitleLabel = GoB2ClassLabelField
     }
     
-    //Block 3 Edit and Save Button
-    @IBAction func GOB3(segue:UIStoryboardSegue)
-    {
+    @IBAction func B3AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GoB3addH", sender: self)
+        GohomeworkTitleLabel = GoB3ClassLabelField
     }
     
-    //Block 4 Edit and Save Button
-    @IBAction func GOB4(segue:UIStoryboardSegue)
-    {
+    @IBAction func B4AddButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "GoB4addH", sender: self)
+        GohomeworkTitleLabel = GoB4ClassLabelField
     }
     
+    @IBAction func GOHW(_ sender: UIStoryboardSegue){
+        if sender.source is GoAddHWViewController {
+            
+            
+            
+        }
+    }
+    @IBAction func GOHWVIEW(_ sender: UIStoryboardSegue){
+        if sender.source is GoAddHWViewController {
+            
+        }
+    }
+    
+    //VIEW DID LOAD!!!!!!!!!!!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //Block 1 Border and Rounded Edges
+        
+        //Block 1
+        //Aestetics and Design Elements
         blockOne.layer.borderWidth = 2.5
-        blockOne.layer.borderColor = UIColor(red: (251/255.0), green: (229/255.0), blue: (8/255.0), alpha: 1.0).cgColor
+        blockOne.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
         blockOne.layer.cornerRadius = 20
         blockOne.layer.masksToBounds = true
         
-        //Block 2 Border and Rounded Edges
-        blockTwo.layer.borderWidth = 2.5
-        blockTwo.layer.borderColor = UIColor(red: (251/255.0), green: (229/255.0), blue: (8/255.0), alpha: 1.0).cgColor
-        blockTwo.layer.cornerRadius = 20
-        blockTwo.layer.masksToBounds = true
+        //The Core Data to Save all of the Info
+        let B1ClassroomLabelDefault = UserDefaults.standard
+        if (B1ClassroomLabelDefault.value(forKey: "B1ClassroomLabel") != nil){
+            GoB1ClassLabelSaved = (B1ClassroomLabelDefault.value(forKey: "B1ClassroomLabel") as! NSString) as String
+            GoB1ClassLabelField = GoB1ClassLabelSaved
+        }
+        let B1TeacherLabelDefault = UserDefaults.standard
+        if (B1TeacherLabelDefault.value(forKey: "B1TeacherLabel") != nil){
+            GoB1TeacherLabelSaved = (B1TeacherLabelDefault.value(forKey: "B1TeacherLabel") as! NSString) as String
+            GoB1TeacherLabelField = GoB1TeacherLabelSaved
+        }
+        let B1RoomLabelDefault = UserDefaults.standard
+        if (B1RoomLabelDefault.value(forKey: "B1RoomLabel") != nil){
+            GoB1RoomLabelSaved = (B1RoomLabelDefault.value(forKey: "B1RoomLabel") as! NSString) as String
+            GoB1RoomLabelField = GoB1RoomLabelSaved
+        }
         
-        //Block 3 Border and Rounded Edges
+        //Block 2
+        //Aestetics and Design Elements
+        blockTwo.layer.borderWidth = 2.5
+        blockTwo.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockTwo.layer.cornerRadius = 20
+        blockThree.layer.masksToBounds = true
+        
+        //The Core Data to Save all of the Info
+        
+        //Classroom Core Data
+        let B2ClassroomLabelDefault = UserDefaults.standard
+        if (B2ClassroomLabelDefault.value(forKey: "B2ClassroomLabel") != nil){
+            GoB2ClassLabelSaved = (B2ClassroomLabelDefault.value(forKey: "B2ClassroomLabel") as! NSString) as String
+            GoB2ClassLabelField = GoB2ClassLabelSaved
+        }
+        
+        //Teacher Core Data
+        let B2TeacherLabelDefault = UserDefaults.standard
+        if (B2TeacherLabelDefault.value(forKey: "B2TeacherLabel") != nil){
+            GoB2TeacherLabelSaved = (B2TeacherLabelDefault.value(forKey: "B2TeacherLabel") as! NSString) as String
+            GoB2TeacherLabelField = GoB2TeacherLabelSaved
+        }
+        
+        //Room Core Data
+        let B2RoomLabelDefault = UserDefaults.standard
+        if (B2RoomLabelDefault.value(forKey: "B2RoomLabel") != nil){
+            GoB2RoomLabelSaved = (B2RoomLabelDefault.value(forKey: "B2RoomLabel") as! NSString) as String
+            GoB2RoomLabelField = GoB2RoomLabelSaved
+        }
+        //Block 3
+        //Aestetics and Design Elements
         blockThree.layer.borderWidth = 2.5
-        blockThree.layer.borderColor = UIColor(red: (251/255.0), green: (229/255.0), blue: (8/255.0), alpha: 1.0).cgColor
+        blockThree.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        //Round Corners
         blockThree.layer.cornerRadius = 20
         blockThree.layer.masksToBounds = true
         
-        //Block 4 Border and Rounded Edges
+        //Classroom Core Data
+        let B3ClassroomLabelDefault = UserDefaults.standard
+        if (B3ClassroomLabelDefault.value(forKey: "B3ClassroomLabel") != nil){
+            GoB3ClassLabelSaved = (B3ClassroomLabelDefault.value(forKey: "B3ClassroomLabel") as! NSString) as String
+            GoB3ClassLabelField = GoB3ClassLabelSaved
+        }
+        
+        //Teacher Core Data
+        let B3TeacherLabelDefault = UserDefaults.standard
+        if (B3TeacherLabelDefault.value(forKey: "B3TeacherLabel") != nil){
+            GoB3TeacherLabelSaved = (B3TeacherLabelDefault.value(forKey: "B3TeacherLabel") as! NSString) as String
+            GoB3TeacherLabelField = GoB3TeacherLabelSaved
+        }
+        
+        //Room Core Data
+        let B3RoomLabelDefault = UserDefaults.standard
+        if (B3RoomLabelDefault.value(forKey: "B3RoomLabel") != nil){
+            GoB3RoomLabelSaved = (B3RoomLabelDefault.value(forKey: "B3RoomLabel") as! NSString) as String
+            GoB3RoomLabelField = GoB3RoomLabelSaved
+        }
+        
+        
+        //Block 4
+        //Aestetics and Design Elements
         blockFour.layer.borderWidth = 2.5
-        blockFour.layer.borderColor = UIColor(red: (251/255.0), green: (229/255.0), blue: (8/255.0), alpha: 1.0).cgColor
+        blockFour.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        //Round Corners
         blockFour.layer.cornerRadius = 20
         blockFour.layer.masksToBounds = true
         
-        //Homework Button Border and Rounded Edges
+        //Classroom Core Data:
+        let B4ClassroomLabelDefault = UserDefaults.standard
+        if (B4ClassroomLabelDefault.value(forKey: "B4ClassroomLabel") != nil){
+            GoB4ClassLabelSaved = (B4ClassroomLabelDefault.value(forKey: "B4ClassroomLabel") as! NSString) as String
+            GoB4ClassLabelField = GoB4ClassLabelSaved
+        }
+        
+        //Teacher Core Data:
+        let B4TeacherLabelDefault = UserDefaults.standard
+        if (B4TeacherLabelDefault.value(forKey: "B4TeacherLabel") != nil){
+            GoB4TeacherLabelSaved = (B4TeacherLabelDefault.value(forKey: "B4TeacherLabel") as! NSString) as String
+            GoB4TeacherLabelField = GoB4TeacherLabelSaved
+        }
+        
+        //Room Core Data:
+        let B4RoomLabelDefault = UserDefaults.standard
+        if (B4RoomLabelDefault.value(forKey: "B4RoomLabel") != nil){
+            GoB4RoomLabelSaved = (B4RoomLabelDefault.value(forKey: "B4RoomLabel") as! NSString) as String
+            GoB4RoomLabelField = GoB4RoomLabelSaved
+        }
+        
+        //Homework Button
+        
+        
         homeworkButton.layer.borderWidth = 2.5
-        homeworkButton.layer.borderColor = UIColor(red: (251/255.0), green: (229/255.0), blue: (8/255.0), alpha: 1.0).cgColor
+        homeworkButton.layer.borderColor = UIColor(red: (220/255.0), green: (220/255.0), blue: (220/255.0), alpha: 1.0).cgColor
+        //Round Corners
         homeworkButton.layer.cornerRadius = 20
         homeworkButton.layer.masksToBounds = true
+        
+        //Homework Button Label is autosized to fit different iPhones
+        homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
+        homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        //Add Button
+        B1AddView.layer.borderWidth = 2.5
+        B1AddView.layer.borderColor = UIColor.white.cgColor
+        
+        B2AddView.layer.borderWidth = 2.5
+        B2AddView.layer.borderColor = UIColor.white.cgColor
+        
+        B3AddView.layer.borderWidth = 2.5
+        B3AddView.layer.borderColor = UIColor.white.cgColor
+        
+        B4AddView.layer.borderWidth = 2.5
+        B4AddView.layer.borderColor = UIColor.white.cgColor
+        
     }
-
+    //Refreshes Labels so it will be updated
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //Block 1
+        B1ClassLabel.text = GoB1ClassLabelField
+        B1TeacherLabel.text = GoB1TeacherLabelField
+        B1RoomLabel.text = GoB1RoomLabelField
+        
+        //Block 2
+        B2ClassLabel.text = GoB2ClassLabelField
+        B2TeacherLabel.text = GoB2TeacherLabelField
+        B2RoomLabel.text = GoB2RoomLabelField
+        
+        //Block 3
+        B3ClassLabel.text = GoB3ClassLabelField
+        B3TeacherLabel.text = GoB3TeacherLabelField
+        B3RoomLabel.text = GoB3RoomLabelField
+        
+        //Block 4
+        B4ClassLabel.text = GoB4ClassLabelField
+        B4TeacherLabel.text = GoB4TeacherLabelField
+        B4RoomLabel.text = GoB4RoomLabelField
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+

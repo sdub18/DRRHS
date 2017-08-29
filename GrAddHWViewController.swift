@@ -46,6 +46,35 @@ class GrAddHWViewController: UIViewController, UITextFieldDelegate{
         //Round Corners
         BackDrop.layer.cornerRadius = 20
         BackDrop.layer.masksToBounds = true
+        
+        TextField.layer.borderWidth = 1.5
+        TextField.layer.borderColor = UIColor(red: (160/255.0), green: (160/255.0), blue: (160/255.0), alpha: 1.0).cgColor
+        //Rounded Corners
+        TextField.layer.cornerRadius = 10
+        TextField.layer.masksToBounds = true
+        
+        DueDateTextField.layer.borderWidth = 1.5
+        DueDateTextField.layer.borderColor = UIColor(red: (160/255.0), green: (160/255.0), blue: (160/255.0), alpha: 1.0).cgColor
+        
+        DueDateTextField.layer.cornerRadius = 10
+        DueDateTextField.layer.masksToBounds = true
+        
+        //Done Button to dismiss the Keyboard
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        
+        toolBar.setItems([flexibleSpace, doneButton], animated: true)
+        
+        TextField.inputAccessoryView = toolBar
+        DueDateTextField.inputAccessoryView = toolBar
+    }
+    func doneClicked() {
+        view.endEditing(true)
     }
     
     @IBAction func dismissPopUp(_ sender: Any) {
@@ -63,8 +92,10 @@ class GrAddHWViewController: UIViewController, UITextFieldDelegate{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Information for New Homwework Assingment
-        if let newHomeworkAssignment = TextField.text {
-            GrHWassignment = newHomeworkAssignment
+        
+        if TextField.text != nil {
+            let textEdit = TextField.text.replacingOccurrences(of: "HW:", with: " ")
+            GrHWassignment = textEdit
         }
         if let newDueDate = DueDateTextField.text {
             GrDueDateLabel = newDueDate

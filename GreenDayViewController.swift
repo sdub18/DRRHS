@@ -38,6 +38,10 @@ class GreenDayViewController: UIViewController {
     @IBOutlet weak var homeworkButton: UIView!
     @IBOutlet weak var homeworkButtonPressed: UIButton!
     @IBOutlet weak var B1AddView: UIView!
+    @IBOutlet weak var B2AddView: UIButton!
+    @IBOutlet weak var B3AddView: UIButton!
+    @IBOutlet weak var B4AddView: UIButton!
+    
     
     
     //Block 1 IB Outlet Lables
@@ -226,6 +230,15 @@ class GreenDayViewController: UIViewController {
 //Add Button
         B1AddView.layer.borderWidth = 2.5
         B1AddView.layer.borderColor = UIColor.white.cgColor
+        
+        B2AddView.layer.borderWidth = 2.5
+        B2AddView.layer.borderColor = UIColor.white.cgColor
+        
+        B3AddView.layer.borderWidth = 2.5
+        B3AddView.layer.borderColor = UIColor.white.cgColor
+        
+        B4AddView.layer.borderWidth = 2.5
+        B4AddView.layer.borderColor = UIColor.white.cgColor
       
     }
 //Refreshes Labels so it will be updated
