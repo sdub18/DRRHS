@@ -75,23 +75,25 @@ class GrViewHWViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.delete {
-            GreenDayHomework.remove(at: indexPath.row)
             
             let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             
-            let employee = NSEntityDescription.insertNewObject(forEntityName: "GreenDaySchedule", into: context) as! GreenDaySchedule
-            employee.homework = GrHWassignment
-            employee.dueDate = GrDueDateLabel
-            employee.classTitle = GrhomeworkTitleLabel
-            
-            //Save the data
-            (UIApplication.shared.delegate as! AppDelegate).saveContext()
-            homeworkTableViewCell.reloadData()
-        }
- 
-}
-
+            if editingStyle == .delete {
+                let task = GreenDayHomework[indexPath.row]
+                context.delete(task)
+                (UIApplication.shared.delegate as! AppDelegate).saveContext()
+                
+                do {
+                    GreenDayHomework = try context.fetch(GreenDaySchedule.fetchRequest())
+                }
+                catch {
+                    print ("fetching Failed")
+                }
+                
+            }
+                homeworkTableViewCell.reloadData()
+                
+    }
     /*
     // MARK: - Navigation
 

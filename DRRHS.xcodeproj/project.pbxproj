@@ -31,6 +31,8 @@
 		699A69AF1F19816000E9CAD9 /* DRRHSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69AE1F19816000E9CAD9 /* DRRHSTests.swift */; };
 		699A69BA1F19816000E9CAD9 /* DRRHSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69B91F19816000E9CAD9 /* DRRHSUITests.swift */; };
 		69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */; };
+		69D931E21F54F790003D10B6 /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E11F54F790003D10B6 /* DirectoryTC.swift */; };
+		69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */; };
 		8B8E77251C6DF5AAF791BFFB /* Pods_DRRHSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596F0A0424EE2DB3260BE82 /* Pods_DRRHSUITests.framework */; };
 		9977D62A05659396767C9396 /* Pods_DRRHSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */; };
 		F5CA86866F0D3884A2D75B54 /* Pods_DRRHS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488C9059FE65F1D88BFE5DA /* Pods_DRRHS.framework */; };
@@ -87,6 +89,8 @@
 		699A69B91F19816000E9CAD9 /* DRRHSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRRHSUITests.swift; sourceTree = "<group>"; };
 		699A69BB1F19816000E9CAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		69D931E11F54F790003D10B6 /* DirectoryTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryTC.swift; sourceTree = "<group>"; };
+		69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDetailVC.swift; sourceTree = "<group>"; };
 		8488C9059FE65F1D88BFE5DA /* Pods_DRRHS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		889503338C678DF704102A81 /* Pods-DRRHSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHSUITests/Pods-DRRHSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC31B450DFC50F8A09535C46 /* Pods-DRRHSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHSTests/Pods-DRRHSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 				699A69991F19816000E9CAD9 /* FirstViewController.swift */,
 				699A699B1F19816000E9CAD9 /* SecondViewController.swift */,
 				69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */,
+				69D931E01F54F76A003D10B6 /* Directory */,
 				311E24D41F539D8D00E49052 /* Gold Day Schedule */,
 				311E24D31F539D6800E49052 /* Green Day Schedule */,
 				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
@@ -221,6 +226,15 @@
 				699A69BB1F19816000E9CAD9 /* Info.plist */,
 			);
 			path = DRRHSUITests;
+			sourceTree = "<group>";
+		};
+		69D931E01F54F76A003D10B6 /* Directory */ = {
+			isa = PBXGroup;
+			children = (
+				69D931E11F54F790003D10B6 /* DirectoryTC.swift */,
+				69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */,
+			);
+			path = Directory;
 			sourceTree = "<group>";
 		};
 		AEDF68BE78ACE7F3F6B6A784 /* Frameworks */ = {
@@ -520,6 +534,7 @@
 				3182B9931F36327D000F92DD /* GoB4ViewController.swift in Sources */,
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
+				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
 				31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */,
@@ -529,6 +544,7 @@
 				699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */,
 				311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */,
 				313D4AD71F342668002FAFA3 /* GoldDayViewController.swift in Sources */,
+				69D931E21F54F790003D10B6 /* DirectoryTC.swift in Sources */,
 				3182B9891F3615FB000F92DD /* GrB3ViewController.swift in Sources */,
 				3182B98B1F3617D5000F92DD /* GrB4ViewController.swift in Sources */,
 				3160B9CF1F35746B00EA532B /* GrB1ViewController.swift in Sources */,
