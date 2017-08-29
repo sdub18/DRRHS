@@ -21,9 +21,13 @@ class DirectoryDetailVC: UIViewController{
     @IBOutlet weak var EmailLabel: UILabel!
     @IBOutlet weak var RoomNumberLabel: UILabel!
     @IBOutlet weak var WebsiteLabel: UILabel!
+    @IBOutlet weak var TeacherPicture: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        TeacherPicture.layer.masksToBounds = true
+        TeacherPicture.layer.cornerRadius = 50
         
         NameLabel.text = name
         EmailLabel.text = email
