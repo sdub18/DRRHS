@@ -12,7 +12,7 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
     
     var teachers = [
         Teacher(name:"Brandon Delano", email:"BDelano@drregional.org", roomNumber: "128", website: "drregional.org"),
-        Teacher(name:"Joeseph Botelho", email:"JBotelho@drregional.org", roomNumber: "220", website: "drregional.org")
+        Teacher(name:"Joseph Botelho", email:"JBotelho@drregional.org", roomNumber: "220", website: "drregional.org")
     ]
     var filteredTeachers = [Teacher]()
     

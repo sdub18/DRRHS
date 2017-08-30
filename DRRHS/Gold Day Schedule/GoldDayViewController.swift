@@ -105,7 +105,7 @@ class GoldDayViewController: UIViewController {
         //Block 1
         //Aestetics and Design Elements
         blockOne.layer.borderWidth = 2.5
-        blockOne.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockOne.layer.borderColor = UIColor.black.cgColor
         blockOne.layer.cornerRadius = 20
         blockOne.layer.masksToBounds = true
         
@@ -129,9 +129,9 @@ class GoldDayViewController: UIViewController {
         //Block 2
         //Aestetics and Design Elements
         blockTwo.layer.borderWidth = 2.5
-        blockTwo.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockTwo.layer.borderColor = UIColor.black.cgColor
         blockTwo.layer.cornerRadius = 20
-        blockThree.layer.masksToBounds = true
+        blockTwo.layer.masksToBounds = true
         
         //The Core Data to Save all of the Info
         
@@ -158,7 +158,7 @@ class GoldDayViewController: UIViewController {
         //Block 3
         //Aestetics and Design Elements
         blockThree.layer.borderWidth = 2.5
-        blockThree.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockThree.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockThree.layer.cornerRadius = 20
         blockThree.layer.masksToBounds = true
@@ -188,7 +188,7 @@ class GoldDayViewController: UIViewController {
         //Block 4
         //Aestetics and Design Elements
         blockFour.layer.borderWidth = 2.5
-        blockFour.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockFour.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockFour.layer.cornerRadius = 20
         blockFour.layer.masksToBounds = true
@@ -224,45 +224,32 @@ class GoldDayViewController: UIViewController {
         homeworkButton.layer.masksToBounds = true
         
         //Homework Button Label is autosized to fit different iPhones
-        homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
-        homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
-        
-        //Add Button
-        B1AddView.layer.borderWidth = 2.5
-        B1AddView.layer.borderColor = UIColor.white.cgColor
-        
-        B2AddView.layer.borderWidth = 2.5
-        B2AddView.layer.borderColor = UIColor.white.cgColor
-        
-        B3AddView.layer.borderWidth = 2.5
-        B3AddView.layer.borderColor = UIColor.white.cgColor
-        
-        B4AddView.layer.borderWidth = 2.5
-        B4AddView.layer.borderColor = UIColor.white.cgColor
+        //homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
+        //homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
         
     }
     //Refreshes Labels so it will be updated
     override func viewWillAppear(_ animated: Bool) {
         
         //Block 1
-        B1ClassLabel.text = GoB1ClassLabelField
-        B1TeacherLabel.text = GoB1TeacherLabelField
-        B1RoomLabel.text = GoB1RoomLabelField
+        //B1ClassLabel.text = GoB1ClassLabelField
+        //B1TeacherLabel.text = GoB1TeacherLabelField
+        //B1RoomLabel.text = GoB1RoomLabelField
         
         //Block 2
-        B2ClassLabel.text = GoB2ClassLabelField
-        B2TeacherLabel.text = GoB2TeacherLabelField
-        B2RoomLabel.text = GoB2RoomLabelField
+        //B2ClassLabel.text = GoB2ClassLabelField
+        //B2TeacherLabel.text = GoB2TeacherLabelField
+        //B2RoomLabel.text = GoB2RoomLabelField
         
         //Block 3
-        B3ClassLabel.text = GoB3ClassLabelField
-        B3TeacherLabel.text = GoB3TeacherLabelField
-        B3RoomLabel.text = GoB3RoomLabelField
+        //B3ClassLabel.text = GoB3ClassLabelField
+        //B3TeacherLabel.text = GoB3TeacherLabelField
+        //B3RoomLabel.text = GoB3RoomLabelField
         
         //Block 4
-        B4ClassLabel.text = GoB4ClassLabelField
-        B4TeacherLabel.text = GoB4TeacherLabelField
-        B4RoomLabel.text = GoB4RoomLabelField
+        //B4ClassLabel.text = GoB4ClassLabelField
+        //B4TeacherLabel.text = GoB4TeacherLabelField
+        //B4RoomLabel.text = GoB4RoomLabelField
     }
     
     

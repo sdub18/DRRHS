@@ -30,7 +30,7 @@ class FirstViewController: UIViewController
             UIView.animate(withDuration: 0.5, animations: {
                 self.greenDay.alpha = 1
                 self.goldDay.alpha = 0
-                self.button.tintColor = UIColor(red: (251/255.0), green: (229/255.0), blue: (8/255.0), alpha: 1.0)
+                self.button.tintColor = UIColor(red: (222/255.0), green: (199/255.0), blue: (2/255.0), alpha: 1.0)
             })
         }
         

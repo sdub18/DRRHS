@@ -105,7 +105,7 @@ class GreenDayViewController: UIViewController {
 //Block 1
         //Aestetics and Design Elements
         blockOne.layer.borderWidth = 2.5
-        blockOne.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockOne.layer.borderColor = UIColor.black.cgColor
         blockOne.layer.cornerRadius = 20
         blockOne.layer.masksToBounds = true
         
@@ -129,9 +129,9 @@ class GreenDayViewController: UIViewController {
 //Block 2
         //Aestetics and Design Elements
         blockTwo.layer.borderWidth = 2.5
-        blockTwo.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockTwo.layer.borderColor = UIColor.black.cgColor
         blockTwo.layer.cornerRadius = 20
-        blockThree.layer.masksToBounds = true
+        blockTwo.layer.masksToBounds = true
         
         //The Core Data to Save all of the Info
         
@@ -158,7 +158,7 @@ class GreenDayViewController: UIViewController {
 //Block 3
         //Aestetics and Design Elements
         blockThree.layer.borderWidth = 2.5
-        blockThree.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockThree.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockThree.layer.cornerRadius = 20
         blockThree.layer.masksToBounds = true
@@ -188,7 +188,7 @@ class GreenDayViewController: UIViewController {
 //Block 4
         //Aestetics and Design Elements
         blockFour.layer.borderWidth = 2.5
-        blockFour.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        blockFour.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockFour.layer.cornerRadius = 20
         blockFour.layer.masksToBounds = true
@@ -226,19 +226,6 @@ class GreenDayViewController: UIViewController {
         //Homework Button Label is autosized to fit different iPhones
         homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
         homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
-        
-//Add Button
-        B1AddView.layer.borderWidth = 2.5
-        B1AddView.layer.borderColor = UIColor.white.cgColor
-        
-        B2AddView.layer.borderWidth = 2.5
-        B2AddView.layer.borderColor = UIColor.white.cgColor
-        
-        B3AddView.layer.borderWidth = 2.5
-        B3AddView.layer.borderColor = UIColor.white.cgColor
-        
-        B4AddView.layer.borderWidth = 2.5
-        B4AddView.layer.borderColor = UIColor.white.cgColor
       
     }
 //Refreshes Labels so it will be updated

@@ -11,9 +11,9 @@ import CoreData
 
 //Homework Array to store information of Homework
 
-class GrViewHWViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class GoViewHWViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var GoldDayHomework:[GreenDaySchedule] = []
+    var GoldDayHomework:[GoldDaySchedule] = []
     
     @IBAction func saveButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "GOHWVIEWUnwind", sender: self)
@@ -24,7 +24,7 @@ class GrViewHWViewController: UIViewController, UITableViewDelegate, UITableView
     //Function to get number of rows in TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return GreenDayHomework.count
+        return GoldDayHomework.count
     }
     
     //Function to reference our tableviewCell
@@ -84,7 +84,7 @@ class GrViewHWViewController: UIViewController, UITableViewDelegate, UITableView
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
             
             do {
-                GoldDayHomework = try context.fetch(GreenDaySchedule.fetchRequest())
+                GoldDayHomework = try context.fetch(GoldDaySchedule.fetchRequest())
             }
             catch {
                 print ("fetching Failed")
