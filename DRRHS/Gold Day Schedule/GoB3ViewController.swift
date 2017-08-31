@@ -15,11 +15,8 @@ var GoB3roomText: String!
 class GoB3ViewController: UIViewController {
     
     @IBOutlet weak var ClassTextField: UITextField!
-    var classText: String!
     @IBOutlet weak var TeacherTextField: UITextField!
-    var teacherText: String!
     @IBOutlet weak var RoomTextField: UITextField!
-    var roomText: String!
     
     //Save Button
     @IBAction func saveButtonIsPressed(_ sender: Any) {

@@ -48,15 +48,15 @@ class GoSettingsViewController: UIViewController {
             GoB1RoomLabelSaved = GoB1RoomLabelField
             
             let B1ClassroomLabelDefault = UserDefaults.standard
-            B1ClassroomLabelDefault.setValue(GoB1ClassLabelSaved, forKey: "B1ClassroomLabel")
+            B1ClassroomLabelDefault.setValue(GoB1ClassLabelSaved, forKey: "GoB1ClassroomLabel")
             B1ClassroomLabelDefault.synchronize()
             
             let B1TeacherLabelDefault = UserDefaults.standard
-            B1TeacherLabelDefault.set(GoB1TeacherLabelSaved, forKey: "B1TeacherLabel")
+            B1TeacherLabelDefault.set(GoB1TeacherLabelSaved, forKey: "GoB1TeacherLabel")
             B1TeacherLabelDefault.synchronize()
             
             let B1RoomLabelDefault = UserDefaults.standard
-            B1RoomLabelDefault.setValue(GoB1RoomLabelSaved, forKey: "B1RoomLabel")
+            B1RoomLabelDefault.setValue(GoB1RoomLabelSaved, forKey: "GoB1RoomLabel")
             B1RoomLabelDefault.synchronize()
         }
     }
@@ -76,15 +76,15 @@ class GoSettingsViewController: UIViewController {
             GoB2RoomLabelSaved = GoB2RoomLabelField
             
             let B2ClassroomLabelDefault = UserDefaults.standard
-            B2ClassroomLabelDefault.setValue(GoB2ClassLabelSaved, forKey: "B2ClassroomLabel")
+            B2ClassroomLabelDefault.setValue(GoB2ClassLabelSaved, forKey: "GoB2ClassroomLabel")
             B2ClassroomLabelDefault.synchronize()
             
             let B2TeacherLabelDefault = UserDefaults.standard
-            B2TeacherLabelDefault.set(GoB2TeacherLabelSaved, forKey: "B2TeacherLabel")
+            B2TeacherLabelDefault.set(GoB2TeacherLabelSaved, forKey: "GoB2TeacherLabel")
             B2TeacherLabelDefault.synchronize()
             
             let B2RoomLabelDefault = UserDefaults.standard
-            B2RoomLabelDefault.setValue(GoB2RoomLabelSaved, forKey: "B2RoomLabel")
+            B2RoomLabelDefault.setValue(GoB2RoomLabelSaved, forKey: "GoB2RoomLabel")
             B2RoomLabelDefault.synchronize()
         }
     }
@@ -105,22 +105,22 @@ class GoSettingsViewController: UIViewController {
             GoB3RoomLabelSaved = GoB3RoomLabelField
             
             let B3ClassroomLabelDefault = UserDefaults.standard
-            B3ClassroomLabelDefault.setValue(GoB3ClassLabelSaved, forKey: "B3ClassroomLabel")
+            B3ClassroomLabelDefault.setValue(GoB3ClassLabelSaved, forKey: "GoB3ClassroomLabel")
             B3ClassroomLabelDefault.synchronize()
             
             let B3TeacherLabelDefault = UserDefaults.standard
-            B3TeacherLabelDefault.set(GoB3TeacherLabelSaved, forKey: "B3TeacherLabel")
+            B3TeacherLabelDefault.set(GoB3TeacherLabelSaved, forKey: "GoB3TeacherLabel")
             B3TeacherLabelDefault.synchronize()
             
             let B3RoomLabelDefault = UserDefaults.standard
-            B3RoomLabelDefault.setValue(GoB3RoomLabelSaved, forKey: "B3RoomLabel")
+            B3RoomLabelDefault.setValue(GoB3RoomLabelSaved, forKey: "GoB3RoomLabel")
             B3RoomLabelDefault.synchronize()
         }
     }
     
     //BLOCK 4 SEGUE UNWIND CONTROLLER
     @IBAction func GOB4(_ sender: UIStoryboardSegue){
-        if sender.source is GrB4ViewController {
+        if sender.source is GoB4ViewController {
             
             //B4 Class Label and Core Data
             GoB4ClassLabelField = GoB4classText
@@ -135,15 +135,15 @@ class GoSettingsViewController: UIViewController {
             GoB4RoomLabelSaved = GoB4RoomLabelField
             
             let B4ClassroomLabelDefault = UserDefaults.standard
-            B4ClassroomLabelDefault.setValue(GoB4ClassLabelSaved, forKey: "B4ClassroomLabel")
+            B4ClassroomLabelDefault.setValue(GoB4ClassLabelSaved, forKey: "GoB4ClassroomLabel")
             B4ClassroomLabelDefault.synchronize()
             
             let B4TeacherLabelDefault = UserDefaults.standard
-            B4TeacherLabelDefault.set(GoB4TeacherLabelSaved, forKey: "B4TeacherLabel")
+            B4TeacherLabelDefault.set(GoB4TeacherLabelSaved, forKey: "GoB4TeacherLabel")
             B4TeacherLabelDefault.synchronize()
             
             let B4RoomLabelDefault = UserDefaults.standard
-            B4RoomLabelDefault.setValue(GoB4RoomLabelSaved, forKey: "B4RoomLabel")
+            B4RoomLabelDefault.setValue(GoB4RoomLabelSaved, forKey: "GoB4RoomLabel")
             B4RoomLabelDefault.synchronize()
         }
     }

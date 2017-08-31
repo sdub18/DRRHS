@@ -65,23 +65,23 @@ class GoldDayViewController: UIViewController {
     @IBOutlet weak var B4RoomLabel: UILabel!
     
     @IBAction func B1AddButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoB1addH", sender: self)
+        self.performSegue(withIdentifier: "GoB1addHW", sender: self)
         
         GohomeworkTitleLabel = GoB1ClassLabelField
     }
     
     @IBAction func B2AddButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoB2addH", sender: self)
+        self.performSegue(withIdentifier: "GoB2addHW", sender: self)
         GohomeworkTitleLabel = GoB2ClassLabelField
     }
     
     @IBAction func B3AddButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoB3addH", sender: self)
+        self.performSegue(withIdentifier: "GoB3addHW", sender: self)
         GohomeworkTitleLabel = GoB3ClassLabelField
     }
     
     @IBAction func B4AddButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "GoB4addH", sender: self)
+        self.performSegue(withIdentifier: "GoB4addHW", sender: self)
         GohomeworkTitleLabel = GoB4ClassLabelField
     }
     
@@ -104,31 +104,31 @@ class GoldDayViewController: UIViewController {
         
         //Block 1
         //Aestetics and Design Elements
-        blockOne.layer.borderWidth = 2.5
+        blockOne.layer.borderWidth = 2
         blockOne.layer.borderColor = UIColor.black.cgColor
         blockOne.layer.cornerRadius = 20
         blockOne.layer.masksToBounds = true
         
         //The Core Data to Save all of the Info
         let B1ClassroomLabelDefault = UserDefaults.standard
-        if (B1ClassroomLabelDefault.value(forKey: "B1ClassroomLabel") != nil){
-            GoB1ClassLabelSaved = (B1ClassroomLabelDefault.value(forKey: "B1ClassroomLabel") as! NSString) as String
+        if (B1ClassroomLabelDefault.value(forKey: "GoB1ClassroomLabel") != nil){
+            GoB1ClassLabelSaved = (B1ClassroomLabelDefault.value(forKey: "GoB1ClassroomLabel") as! NSString) as String
             GoB1ClassLabelField = GoB1ClassLabelSaved
         }
         let B1TeacherLabelDefault = UserDefaults.standard
-        if (B1TeacherLabelDefault.value(forKey: "B1TeacherLabel") != nil){
-            GoB1TeacherLabelSaved = (B1TeacherLabelDefault.value(forKey: "B1TeacherLabel") as! NSString) as String
+        if (B1TeacherLabelDefault.value(forKey: "GoB1TeacherLabel") != nil){
+            GoB1TeacherLabelSaved = (B1TeacherLabelDefault.value(forKey: "GoB1TeacherLabel") as! NSString) as String
             GoB1TeacherLabelField = GoB1TeacherLabelSaved
         }
         let B1RoomLabelDefault = UserDefaults.standard
-        if (B1RoomLabelDefault.value(forKey: "B1RoomLabel") != nil){
-            GoB1RoomLabelSaved = (B1RoomLabelDefault.value(forKey: "B1RoomLabel") as! NSString) as String
+        if (B1RoomLabelDefault.value(forKey: "GoB1RoomLabel") != nil){
+            GoB1RoomLabelSaved = (B1RoomLabelDefault.value(forKey: "GoB1RoomLabel") as! NSString) as String
             GoB1RoomLabelField = GoB1RoomLabelSaved
         }
         
         //Block 2
         //Aestetics and Design Elements
-        blockTwo.layer.borderWidth = 2.5
+        blockTwo.layer.borderWidth = 2
         blockTwo.layer.borderColor = UIColor.black.cgColor
         blockTwo.layer.cornerRadius = 20
         blockTwo.layer.masksToBounds = true
@@ -137,27 +137,27 @@ class GoldDayViewController: UIViewController {
         
         //Classroom Core Data
         let B2ClassroomLabelDefault = UserDefaults.standard
-        if (B2ClassroomLabelDefault.value(forKey: "B2ClassroomLabel") != nil){
-            GoB2ClassLabelSaved = (B2ClassroomLabelDefault.value(forKey: "B2ClassroomLabel") as! NSString) as String
+        if (B2ClassroomLabelDefault.value(forKey: "GoB2ClassroomLabel") != nil){
+            GoB2ClassLabelSaved = (B2ClassroomLabelDefault.value(forKey: "GoB2ClassroomLabel") as! NSString) as String
             GoB2ClassLabelField = GoB2ClassLabelSaved
         }
         
         //Teacher Core Data
         let B2TeacherLabelDefault = UserDefaults.standard
-        if (B2TeacherLabelDefault.value(forKey: "B2TeacherLabel") != nil){
-            GoB2TeacherLabelSaved = (B2TeacherLabelDefault.value(forKey: "B2TeacherLabel") as! NSString) as String
+        if (B2TeacherLabelDefault.value(forKey: "GoB2TeacherLabel") != nil){
+            GoB2TeacherLabelSaved = (B2TeacherLabelDefault.value(forKey: "GoB2TeacherLabel") as! NSString) as String
             GoB2TeacherLabelField = GoB2TeacherLabelSaved
         }
         
         //Room Core Data
         let B2RoomLabelDefault = UserDefaults.standard
-        if (B2RoomLabelDefault.value(forKey: "B2RoomLabel") != nil){
-            GoB2RoomLabelSaved = (B2RoomLabelDefault.value(forKey: "B2RoomLabel") as! NSString) as String
+        if (B2RoomLabelDefault.value(forKey: "GoB2RoomLabel") != nil){
+            GoB2RoomLabelSaved = (B2RoomLabelDefault.value(forKey: "GoB2RoomLabel") as! NSString) as String
             GoB2RoomLabelField = GoB2RoomLabelSaved
         }
         //Block 3
         //Aestetics and Design Elements
-        blockThree.layer.borderWidth = 2.5
+        blockThree.layer.borderWidth = 2
         blockThree.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockThree.layer.cornerRadius = 20
@@ -165,29 +165,29 @@ class GoldDayViewController: UIViewController {
         
         //Classroom Core Data
         let B3ClassroomLabelDefault = UserDefaults.standard
-        if (B3ClassroomLabelDefault.value(forKey: "B3ClassroomLabel") != nil){
-            GoB3ClassLabelSaved = (B3ClassroomLabelDefault.value(forKey: "B3ClassroomLabel") as! NSString) as String
+        if (B3ClassroomLabelDefault.value(forKey: "GoB3ClassroomLabel") != nil){
+            GoB3ClassLabelSaved = (B3ClassroomLabelDefault.value(forKey: "GoB3ClassroomLabel") as! NSString) as String
             GoB3ClassLabelField = GoB3ClassLabelSaved
         }
         
         //Teacher Core Data
         let B3TeacherLabelDefault = UserDefaults.standard
-        if (B3TeacherLabelDefault.value(forKey: "B3TeacherLabel") != nil){
-            GoB3TeacherLabelSaved = (B3TeacherLabelDefault.value(forKey: "B3TeacherLabel") as! NSString) as String
+        if (B3TeacherLabelDefault.value(forKey: "GoB3TeacherLabel") != nil){
+            GoB3TeacherLabelSaved = (B3TeacherLabelDefault.value(forKey: "GoB3TeacherLabel") as! NSString) as String
             GoB3TeacherLabelField = GoB3TeacherLabelSaved
         }
         
         //Room Core Data
         let B3RoomLabelDefault = UserDefaults.standard
-        if (B3RoomLabelDefault.value(forKey: "B3RoomLabel") != nil){
-            GoB3RoomLabelSaved = (B3RoomLabelDefault.value(forKey: "B3RoomLabel") as! NSString) as String
+        if (B3RoomLabelDefault.value(forKey: "GoB3RoomLabel") != nil){
+            GoB3RoomLabelSaved = (B3RoomLabelDefault.value(forKey: "GoB3RoomLabel") as! NSString) as String
             GoB3RoomLabelField = GoB3RoomLabelSaved
         }
         
         
         //Block 4
         //Aestetics and Design Elements
-        blockFour.layer.borderWidth = 2.5
+        blockFour.layer.borderWidth = 2
         blockFour.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockFour.layer.cornerRadius = 20
@@ -195,22 +195,22 @@ class GoldDayViewController: UIViewController {
         
         //Classroom Core Data:
         let B4ClassroomLabelDefault = UserDefaults.standard
-        if (B4ClassroomLabelDefault.value(forKey: "B4ClassroomLabel") != nil){
-            GoB4ClassLabelSaved = (B4ClassroomLabelDefault.value(forKey: "B4ClassroomLabel") as! NSString) as String
+        if (B4ClassroomLabelDefault.value(forKey: "GoB4ClassroomLabel") != nil){
+            GoB4ClassLabelSaved = (B4ClassroomLabelDefault.value(forKey: "GoB4ClassroomLabel") as! NSString) as String
             GoB4ClassLabelField = GoB4ClassLabelSaved
         }
         
         //Teacher Core Data:
         let B4TeacherLabelDefault = UserDefaults.standard
-        if (B4TeacherLabelDefault.value(forKey: "B4TeacherLabel") != nil){
-            GoB4TeacherLabelSaved = (B4TeacherLabelDefault.value(forKey: "B4TeacherLabel") as! NSString) as String
+        if (B4TeacherLabelDefault.value(forKey: "GoB4TeacherLabel") != nil){
+            GoB4TeacherLabelSaved = (B4TeacherLabelDefault.value(forKey: "GoB4TeacherLabel") as! NSString) as String
             GoB4TeacherLabelField = GoB4TeacherLabelSaved
         }
         
         //Room Core Data:
         let B4RoomLabelDefault = UserDefaults.standard
-        if (B4RoomLabelDefault.value(forKey: "B4RoomLabel") != nil){
-            GoB4RoomLabelSaved = (B4RoomLabelDefault.value(forKey: "B4RoomLabel") as! NSString) as String
+        if (B4RoomLabelDefault.value(forKey: "GoB4RoomLabel") != nil){
+            GoB4RoomLabelSaved = (B4RoomLabelDefault.value(forKey: "GoB4RoomLabel") as! NSString) as String
             GoB4RoomLabelField = GoB4RoomLabelSaved
         }
         
@@ -224,32 +224,32 @@ class GoldDayViewController: UIViewController {
         homeworkButton.layer.masksToBounds = true
         
         //Homework Button Label is autosized to fit different iPhones
-        //homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
-        //homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
+        homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
+        homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
         
     }
     //Refreshes Labels so it will be updated
     override func viewWillAppear(_ animated: Bool) {
         
         //Block 1
-        //B1ClassLabel.text = GoB1ClassLabelField
-        //B1TeacherLabel.text = GoB1TeacherLabelField
-        //B1RoomLabel.text = GoB1RoomLabelField
+        B1ClassLabel.text = GoB1ClassLabelField
+        B1TeacherLabel.text = GoB1TeacherLabelField
+        B1RoomLabel.text = GoB1RoomLabelField
         
         //Block 2
-        //B2ClassLabel.text = GoB2ClassLabelField
-        //B2TeacherLabel.text = GoB2TeacherLabelField
-        //B2RoomLabel.text = GoB2RoomLabelField
+        B2ClassLabel.text = GoB2ClassLabelField
+        B2TeacherLabel.text = GoB2TeacherLabelField
+        B2RoomLabel.text = GoB2RoomLabelField
         
         //Block 3
-        //B3ClassLabel.text = GoB3ClassLabelField
-        //B3TeacherLabel.text = GoB3TeacherLabelField
-        //B3RoomLabel.text = GoB3RoomLabelField
+        B3ClassLabel.text = GoB3ClassLabelField
+        B3TeacherLabel.text = GoB3TeacherLabelField
+        B3RoomLabel.text = GoB3RoomLabelField
         
         //Block 4
-        //B4ClassLabel.text = GoB4ClassLabelField
-        //B4TeacherLabel.text = GoB4TeacherLabelField
-        //B4RoomLabel.text = GoB4RoomLabelField
+        B4ClassLabel.text = GoB4ClassLabelField
+        B4TeacherLabel.text = GoB4TeacherLabelField
+        B4RoomLabel.text = GoB4RoomLabelField
     }
     
     

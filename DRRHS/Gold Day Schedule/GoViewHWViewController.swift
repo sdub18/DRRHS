@@ -5,7 +5,7 @@
 //  Created by Sam DuBois on 8/28/17.
 //  Copyright © 2017 Joshua Holme. All rights reserved.
 //
-
+/*
 import UIKit
 import CoreData
 
@@ -105,3 +105,4 @@ class GoViewHWViewController: UIViewController, UITableViewDelegate, UITableView
      */
     
 }
+*/

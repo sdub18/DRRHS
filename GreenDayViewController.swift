@@ -104,7 +104,7 @@ class GreenDayViewController: UIViewController {
 
 //Block 1
         //Aestetics and Design Elements
-        blockOne.layer.borderWidth = 2.5
+        blockOne.layer.borderWidth = 2
         blockOne.layer.borderColor = UIColor.black.cgColor
         blockOne.layer.cornerRadius = 20
         blockOne.layer.masksToBounds = true
@@ -128,7 +128,7 @@ class GreenDayViewController: UIViewController {
         
 //Block 2
         //Aestetics and Design Elements
-        blockTwo.layer.borderWidth = 2.5
+        blockTwo.layer.borderWidth = 2
         blockTwo.layer.borderColor = UIColor.black.cgColor
         blockTwo.layer.cornerRadius = 20
         blockTwo.layer.masksToBounds = true
@@ -157,7 +157,7 @@ class GreenDayViewController: UIViewController {
         }
 //Block 3
         //Aestetics and Design Elements
-        blockThree.layer.borderWidth = 2.5
+        blockThree.layer.borderWidth = 2
         blockThree.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockThree.layer.cornerRadius = 20
@@ -187,7 +187,7 @@ class GreenDayViewController: UIViewController {
         
 //Block 4
         //Aestetics and Design Elements
-        blockFour.layer.borderWidth = 2.5
+        blockFour.layer.borderWidth = 2
         blockFour.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         blockFour.layer.cornerRadius = 20

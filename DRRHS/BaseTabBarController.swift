@@ -10,11 +10,13 @@
 import Foundation
 import UIKit
 
+var baseTabBarNumber: Int = 1
+
 class BaseTabBarController: UITabBarController
 {
     
     //Create a variable to choose the array position of the tab you want to load
-    @IBInspectable var defaultIndex: Int = 0
+    @IBInspectable var defaultIndex: Int = baseTabBarNumber
     
     override func viewDidLoad()
     {
