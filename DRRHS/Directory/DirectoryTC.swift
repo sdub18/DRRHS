@@ -110,9 +110,10 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         
+            
         let vc = segue.destination as! DirectoryDetailVC
         
         vc.name = selectedTeacher.name
