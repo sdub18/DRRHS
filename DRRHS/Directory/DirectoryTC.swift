@@ -34,6 +34,9 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         self.searchController.searchResultsUpdater = self
         definesPresentationContext = true
         
+        //Add in the DR LOGO on top Bar
+        addNavBarImage()
+        
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -116,6 +119,26 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         vc.email = selectedTeacher.email
         vc.roomNumber = selectedTeacher.roomNumber
         vc.website = selectedTeacher.website
+        
+    }
+    
+    func addNavBarImage() {
+        
+        let navBarController = navigationController!
+        
+        let image = #imageLiteral(resourceName: "DRlogo2")
+        let imageView = UIImageView(image: image)
+        
+        let bannerWidth = navBarController.navigationBar.frame.size.width
+        let bannerHeight = navBarController.navigationBar.frame.size.height
+        
+        let  bannerX = bannerWidth / 2 - image.size.width / 2
+        let bannerY = bannerHeight / 2 - image.size.height / 2
+        
+        imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerWidth, height: bannerHeight)
+        imageView.contentMode = .scaleAspectFit
+        
+        navigationItem.titleView = imageView
         
     }
     
