@@ -5,7 +5,7 @@
 //  Created by Sam DuBois on 8/28/17.
 //  Copyright © 2017 Joshua Holme. All rights reserved.
 //
-/*
+
 import UIKit
 import CoreData
 
@@ -29,13 +29,13 @@ class GoViewHWViewController: UIViewController, UITableViewDelegate, UITableView
     
     //Function to reference our tableviewCell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GoHWCell") as! GrViewHWTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GOHWCell") as! GoViewHWTableViewCell
         
         let task = GoldDayHomework[indexPath.row]
         
-        cell.HomeworkTextField.text = task.homework!
-        cell.DueDateLabel.text = task.dueDate!
-        cell.ClassNameLabel.text = task.classTitle!
+       cell.HomeworkTextField.text = task.homework!
+       cell.DueDateLabel.text = task.dueDate!
+       cell.ClassNameLabel.text = task.classTitle!
         
         return cell
     }
@@ -105,4 +105,4 @@ class GoViewHWViewController: UIViewController, UITableViewDelegate, UITableView
      */
     
 }
-*/
+

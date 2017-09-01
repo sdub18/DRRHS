@@ -42,7 +42,7 @@ class GrAddHWViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         
         BackDrop.layer.borderWidth = 2.5
-        BackDrop.layer.borderColor = UIColor(red: (64/255.0), green: (170/255.0), blue: (72/255.0), alpha: 1.0).cgColor
+        BackDrop.layer.borderColor = UIColor.black.cgColor
         //Round Corners
         BackDrop.layer.cornerRadius = 20
         BackDrop.layer.masksToBounds = true
