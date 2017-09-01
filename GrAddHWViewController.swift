@@ -98,7 +98,7 @@ class GrAddHWViewController: UIViewController, UITextFieldDelegate{
             GrHWassignment = textEdit
         }
         if let newDueDate = DueDateTextField.text {
-            GrDueDateLabel = newDueDate
+            GrDueDateLabel = "Due: \(newDueDate)"
         }
     }
     

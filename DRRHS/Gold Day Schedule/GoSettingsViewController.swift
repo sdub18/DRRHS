@@ -60,6 +60,9 @@ class GoSettingsViewController: UIViewController {
             B1RoomLabelDefault.synchronize()
         }
     }
+    
+    @IBOutlet weak var BlockOneView: UIView!
+    
     //BLOCK 2 SEGUE UNWIND CONTROLLER
     @IBAction func GOB2(_ sender: UIStoryboardSegue){
         if sender.source is GoB2ViewController {
@@ -88,6 +91,9 @@ class GoSettingsViewController: UIViewController {
             B2RoomLabelDefault.synchronize()
         }
     }
+    
+    @IBOutlet weak var BlockTwoView: UIView!
+    
     //BLOCK 3 SEGUE UNWIND CONTROLLER
     @IBAction func GOB3(_ sender: UIStoryboardSegue){
         if sender.source is GoB3ViewController {
@@ -117,6 +123,8 @@ class GoSettingsViewController: UIViewController {
             B3RoomLabelDefault.synchronize()
         }
     }
+    
+    @IBOutlet weak var BlockThreeView: UIView!
     
     //BLOCK 4 SEGUE UNWIND CONTROLLER
     @IBAction func GOB4(_ sender: UIStoryboardSegue){
@@ -148,8 +156,34 @@ class GoSettingsViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var BlockFourView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Edit Block One Design
+        BlockOneView.layer.borderWidth = 2
+        BlockOneView.layer.borderColor = UIColor.black.cgColor
+        BlockOneView.layer.cornerRadius = 20
+        BlockOneView.layer.masksToBounds = true
+        
+        //Edit Block Two Design
+        BlockTwoView.layer.borderWidth = 2
+        BlockTwoView.layer.borderColor = UIColor.black.cgColor
+        BlockTwoView.layer.cornerRadius = 20
+        BlockTwoView.layer.masksToBounds = true
+        
+        //Edit Block Three Design
+        BlockThreeView.layer.borderWidth = 2
+        BlockThreeView.layer.borderColor = UIColor.black.cgColor
+        BlockThreeView.layer.cornerRadius = 20
+        BlockThreeView.layer.masksToBounds = true
+        
+        //Edit Block One Design
+        BlockFourView.layer.borderWidth = 2
+        BlockFourView.layer.borderColor = UIColor.black.cgColor
+        BlockFourView.layer.cornerRadius = 20
+        BlockFourView.layer.masksToBounds = true
         
         
     }

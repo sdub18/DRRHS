@@ -98,7 +98,7 @@ class GoAddHWViewController: UIViewController, UITextFieldDelegate{
             GoHWassignment = textEdit
         }
         if let newDueDate = DueDateTextField.text {
-            GoDueDateLabel = newDueDate
+            GoDueDateLabel = "Due: \(newDueDate)"
         }
     }
     
