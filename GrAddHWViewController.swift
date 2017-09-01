@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 var GrhomeworkTitleLabel = String()
 var GrHWassignment: String = "Pizza"
@@ -35,6 +36,29 @@ class GrAddHWViewController: UIViewController, UITextFieldDelegate{
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
   
         self.performSegue(withIdentifier: "GRHWUnwind", sender: self)
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Reminder"
+        if GoldDayHomework.count > 1 {
+            content.body = "Don't Forget You Have \(GoldDayHomework.count) Gold Day Homework Assignments Due Soon"
+        }
+        else if GoldDayHomework.count > 0{
+            content.body = "You Only Have 1 Gold Day Assignment Due Soon"
+        }
+        else {
+            content.body = "You Have No Homework Assignments Due For Green Day! Awesome!"
+        }
+        content.badge = 1
+        content.categoryIdentifier = "notificationCategory"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60*2, repeats: false)
+        
+        let requestIndentifier = "GoldDayNotification"
+        let request = UNNotificationRequest(identifier: requestIndentifier, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: {Error in
+            
+            //handle Error here
+        })
         
         
     }

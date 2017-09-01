@@ -18,6 +18,7 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         
         
         //B
+        Teacher(name:"Ms. Beckett", email: "KBeckett@drregional.org", roomNumber: "108", website: "https://sites.google.com/a/drregional.org/msbeckett/"),
         Teacher(name:"Mr. Botelho", email:"JBotelho@drregional.org", roomNumber: "220", website: "drregional.org"),
         Teacher(name:"Mr. Biosvert", email: "SBoisvert@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         Teacher(name:"Mr. Boutin", email: "ABoutin@drregional.org", roomNumber: "301", website: "http://www.drregional.org/dighton-dohobothhigh"),
@@ -28,7 +29,9 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         //C
         Teacher(name:"Mrs. Cardea", email: "PCardea@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh "),
         Teacher(name:"Ms. Carol", email: "@drregional.org", roomNumber: "TBD", website: "http://mscarroll301.blogspot.com/"),
-        Teacher(name:"Mr. Cowgill", email: "@drregional.org", roomNumber: "TBD", website: "N/A"), 
+        Teacher(name:"Mr. Cooke", email: "TCooke@drregional.org", roomNumber: "119", website: "http://www.drregional.org/dighton-dohobothhigh"),
+        Teacher(name:"Mr. Cowgill", email: "@drregional.org", roomNumber: "TBD", website: "N/A"),
+        Teacher(name:"Ms. Cox", email: "@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         Teacher(name:"Ms. Cuthbertson", email: "@drregional.org", roomNumber: "TBD", website: "N/A"),
         
         
@@ -71,8 +74,8 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         
         
         //K
-        
-        
+        Teacher(name:"Ms. King", email: "AKing@drregional.org", roomNumber: "DEPENDS ON CLASS", website: "https://sites.google.com/a/drregional.org/ms-king/"),
+        Teacher(name:"Mr. Kulpa", email: "@drregional.org", roomNumber: "TBD", website: "N/A"),
         
         
         //L
@@ -87,8 +90,10 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         //M
         Teacher(name:"Ms. Madsen", email: "PMadsen@drregional.org", roomNumber: "TBD", website: "N/A"),
         Teacher(name:"Ms. Maguire", email: "@drregional.org", roomNumber: "MEDIA CENTER", website: "http://www.drregional.org/dighton-dohobothhigh"),
+        Teacher(name:"Ms. Mathias", email: "AMathias@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         Teacher(name:"Ms. McCabe", email: "CMccabe@drregional.org", roomNumber: "TBD", website: "N/A"),
         Teacher(name:"Mr. Morrison", email: "JMorrison@drregional.org", roomNumber: "319", website: "http://www.drregional.org/pages/mr-morrisons-web-page"),
+        Teacher(name:"Mr. Moura", email: "DMoura@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         
         
         //N
@@ -99,12 +104,13 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         //O
         Teacher(name:"Mrs. O’Gara", email: "COgara@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         Teacher(name:"Mr. O’Leary", email: "KOleary@drregional.org", roomNumber: "GYM", website: "http://www.drregional.org/dighton-dohobothhigh"),
-        
+        Teacher(name:"Ms. Owens", email: "@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         
         
         //P
+        Teacher(name:"Mr. Pacheco", email: "JPacheco@drregional.org", roomNumber: "111", website: "N/A"),
         Teacher(name:"Mrs. Provonsil", email: "@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
-        
+        Teacher(name:"Mr. Pease", email: "BPease@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         
         
         //Q
@@ -119,7 +125,9 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         
         
         //S
+        Teacher(name:"Ms. Saxon", email: "JSaxon@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
         Teacher(name:"Mr. Schifone", email: "@drregional.org", roomNumber: "TBD", website: "N/A"),
+        Teacher(name:"Mrs. Scott", email: "CScott@drregional.org", roomNumber: "TBD", website: "https://sites.google.com/a/drregional.org/mrs-scott-s-class/"),
         Teacher(name:"Ms. Siachos", email: "ASiachos@drregional.org", roomNumber: "TBD", website: "https://sites.google.com/a/drregional.org/siachos/"),
         Teacher(name:"Ms. Smith", email: "NSmith@drregional.org", roomNumber: "TBD", website: "https://sites.google.com/a/drregional.org/ms-smith-s-math-class/"),
         Teacher(name:"Mr. Stockdale", email: "@drregional.org", roomNumber: "TBD", website: "N/A"),
@@ -141,7 +149,7 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         
         
         //W
-        
+        Teacher(name:"Mrs. Walsh", email: "EWalsh@drregional.org", roomNumber: "TBD", website: "https://sites.google.com/a/drregional.org/ewalsh/documents")
         
         
         

@@ -8,6 +8,7 @@
 
 import UIKit
 import TwitterKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,8 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Initialize Twitter Kit
         Twitter.sharedInstance().start(withConsumerKey:"T2Wid0Bme6VSkX05McK6MEHUf", consumerSecret:"Sq7OfRePU25ug54V8JwjtkkYHYkvoOQCCIF3jzeNCv3ZY7N6w8")
         
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (authorized:Bool, error:Error?) in
+            if !authorized {
+                print("If you would like to change in the future you can do so in settings")
+            }
+            
+        }
+        
         return true
     }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

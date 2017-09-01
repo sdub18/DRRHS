@@ -56,9 +56,33 @@ class FirstViewController: UIViewController
         
     }
     
+    func getGoldDayData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {
+            GoldDayHomework = try context.fetch(GoldDaySchedule.fetchRequest())
+        }
+        catch {
+            print ("fetching Failed")
+        }
+    }
+    func getGreenDayData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {
+            GreenDayHomework = try context.fetch(GreenDaySchedule.fetchRequest())
+        }
+        catch {
+            print ("fetching Failed")
+        }
+    }
+    
+    
     override func viewDidLoad() {
         
         addNavBarImage()
+        getGoldDayData()
+        getGreenDayData()
     }
     
     

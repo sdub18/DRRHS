@@ -9,11 +9,11 @@
 import UIKit
 import CoreData
 
-//Homework Array to store information of Homework
+//Homework Array to store information of Core Data
+var GreenDayHomework:[GreenDaySchedule] = []
 
 class GrViewHWViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var GreenDayHomework:[GreenDaySchedule] = []
     
     @IBAction func saveButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "GRHWVIEWUnwind", sender: self)

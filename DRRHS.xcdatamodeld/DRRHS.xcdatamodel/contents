@@ -11,7 +11,7 @@
         <attribute name="homework" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="GreenDaySchedule" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="GoldDaySchedule" positionX="-63" positionY="9" width="128" height="90"/>
+        <element name="GreenDaySchedule" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>

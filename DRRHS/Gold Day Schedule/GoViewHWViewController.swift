@@ -8,15 +8,18 @@
 
 import UIKit
 import CoreData
+import UserNotifications
+var GoldDayHomework:[GoldDaySchedule] = []
 
 //Homework Array to store information of Homework
 
 class GoViewHWViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var GoldDayHomework:[GoldDaySchedule] = []
+    
     
     @IBAction func saveButtonPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "GOHWVIEWUnwind", sender: self)
+    
     }
     //outlet to the tableviewCell
     @IBOutlet weak var homeworkTableViewCell: UITableView!
@@ -36,6 +39,7 @@ class GoViewHWViewController: UIViewController, UITableViewDelegate, UITableView
        cell.HomeworkTextField.text = task.homework!
        cell.DueDateLabel.text = task.dueDate!
        cell.ClassNameLabel.text = task.classTitle!
+    
         
         return cell
     }
@@ -54,7 +58,6 @@ class GoViewHWViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewWillAppear(_ animated: Bool) {
         //get the data from core data
         getData()
-        
         //reload data
         homeworkTableViewCell.reloadData()
     }
