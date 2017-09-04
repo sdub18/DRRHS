@@ -185,6 +185,18 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         self.searchController.searchResultsUpdater = self
         definesPresentationContext = true
         
+        searchController.searchBar.layer.borderWidth = 0
+        
+        //Make Search Background Green
+        tableView.backgroundView = UIView()
+        tableView.backgroundView?.backgroundColor = .DRGreen
+        
+        //Remove Navigation Bar Border
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        
+        
         //Add in the DR LOGO on top Bar
         addNavBarImage()
         

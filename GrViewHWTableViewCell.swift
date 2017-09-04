@@ -9,13 +9,11 @@
 import UIKit
 
 class GrViewHWTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var ClassNameLabel: UILabel!
-    @IBOutlet weak var DueDateLabel: UILabel!
+    
     @IBOutlet weak var HomeworkTextField: UITextView!
+    @IBOutlet weak var DueDateLabel: UILabel!
+    @IBOutlet weak var ClassNameLabel: UILabel!
     @IBOutlet weak var ClassColor: UIView!
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

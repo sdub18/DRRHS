@@ -34,6 +34,8 @@
 		699A69A41F19816000E9CAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */; };
 		699A69AF1F19816000E9CAD9 /* DRRHSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69AE1F19816000E9CAD9 /* DRRHSTests.swift */; };
 		699A69BA1F19816000E9CAD9 /* DRRHSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69B91F19816000E9CAD9 /* DRRHSUITests.swift */; };
+		69B8ABA41F5CED8A00A0A6BE /* DRGreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8ABA31F5CED8A00A0A6BE /* DRGreen.swift */; };
+		69B8ABA61F5CEFC600A0A6BE /* DRGold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */; };
 		69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */; };
 		69D931E21F54F790003D10B6 /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E11F54F790003D10B6 /* DirectoryTC.swift */; };
 		69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */; };
@@ -97,6 +99,8 @@
 		699A69B51F19816000E9CAD9 /* DRRHSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DRRHSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A69B91F19816000E9CAD9 /* DRRHSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRRHSUITests.swift; sourceTree = "<group>"; };
 		699A69BB1F19816000E9CAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B8ABA31F5CED8A00A0A6BE /* DRGreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRGreen.swift; sourceTree = "<group>"; };
+		69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRGold.swift; sourceTree = "<group>"; };
 		69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		69D931E11F54F790003D10B6 /* DirectoryTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryTC.swift; sourceTree = "<group>"; };
 		69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDetailVC.swift; sourceTree = "<group>"; };
@@ -212,9 +216,8 @@
 				699A699D1F19816000E9CAD9 /* Main.storyboard */,
 				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
 				699A69971F19816000E9CAD9 /* AppDelegate.swift */,
-				699A69991F19816000E9CAD9 /* FirstViewController.swift */,
-				699A699B1F19816000E9CAD9 /* SecondViewController.swift */,
-				69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */,
+				69B8ABA21F5CED4E00A0A6BE /* Theme */,
+				69B8ABA11F5CED3600A0A6BE /* Tab Bar */,
 				69D931E01F54F76A003D10B6 /* Directory */,
 				311E24D41F539D8D00E49052 /* Gold Day Schedule */,
 				311E24D31F539D6800E49052 /* Green Day Schedule */,
@@ -240,6 +243,25 @@
 				699A69BB1F19816000E9CAD9 /* Info.plist */,
 			);
 			path = DRRHSUITests;
+			sourceTree = "<group>";
+		};
+		69B8ABA11F5CED3600A0A6BE /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				699A69991F19816000E9CAD9 /* FirstViewController.swift */,
+				699A699B1F19816000E9CAD9 /* SecondViewController.swift */,
+				69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		69B8ABA21F5CED4E00A0A6BE /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				69B8ABA31F5CED8A00A0A6BE /* DRGreen.swift */,
+				69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		69D931E01F54F76A003D10B6 /* Directory */ = {
@@ -339,7 +361,7 @@
 				TargetAttributes = {
 					699A69931F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = XLEYC29AG5;
+						DevelopmentTeam = TGLE8RZWF5;
 						ProvisioningStyle = Automatic;
 					};
 					699A69A91F19816000E9CAD9 = {
@@ -551,6 +573,7 @@
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
+				69B8ABA41F5CED8A00A0A6BE /* DRGreen.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
 				31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */,
@@ -568,6 +591,7 @@
 				31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */,
 				31111F1F1F45F51B00AA204F /* GrViewHWTableViewCell.swift in Sources */,
 				3174CCA31F590EBB0080DC7E /* GoViewHWTableViewCell.swift in Sources */,
+				69B8ABA61F5CEFC600A0A6BE /* DRGold.swift in Sources */,
 				3182B98D1F363233000F92DD /* GoB1ViewController.swift in Sources */,
 				31BFFB4F1F5503AE009C3D33 /* GoSettingsViewController.swift in Sources */,
 				31111F171F45D2A100AA204F /* GrAddHWViewController.swift in Sources */,
@@ -736,7 +760,7 @@
 			baseConfigurationReference = 3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XLEYC29AG5;
+				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -752,7 +776,7 @@
 			baseConfigurationReference = F14BD033C7CCD2CEA6B83311 /* Pods-DRRHS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XLEYC29AG5;
+				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -22,12 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Initialize Twitter Kit
         Twitter.sharedInstance().start(withConsumerKey:"T2Wid0Bme6VSkX05McK6MEHUf", consumerSecret:"Sq7OfRePU25ug54V8JwjtkkYHYkvoOQCCIF3jzeNCv3ZY7N6w8")
         
+        //Notifications
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (authorized:Bool, error:Error?) in
             if !authorized {
                 print("If you would like to change in the future you can do so in settings")
             }
             
         }
+        
+        UISearchBar.appearance().barTintColor = .DRGreen
+        UISearchBar.appearance().tintColor = .white
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .DRGreen
         
         return true
     }

@@ -18,17 +18,24 @@ class DirectoryDetailVC: UIViewController{
     var website = ""
     
     @IBOutlet weak var NameLabel: UILabel!
-    @IBOutlet weak var EmailLabel: UILabel!
+    
+    @IBOutlet weak var EmailLabel: UITextView!
+    
     @IBOutlet weak var RoomNumberLabel: UILabel!
-    @IBOutlet weak var WebsiteLabel: UILabel!
+    
+    @IBOutlet weak var WebsiteLabel: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NameLabel.text = name
+        NameLabel.sizeToFit()
         EmailLabel.text = email
+        EmailLabel.sizeToFit()
         RoomNumberLabel.text = roomNumber
+        RoomNumberLabel.sizeToFit()
         WebsiteLabel.text = website
+        WebsiteLabel.sizeToFit()
         
     }
     
