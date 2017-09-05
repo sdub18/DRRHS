@@ -183,9 +183,12 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         self.searchController = UISearchController(searchResultsController: self.resultsController)
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.searchController.searchResultsUpdater = self
+        
+        self.searchController.searchBar.layer.borderWidth = 0
+        self.extendedLayoutIncludesOpaqueBars = true
+        self.searchController.hidesNavigationBarDuringPresentation = true
         definesPresentationContext = true
         
-        searchController.searchBar.layer.borderWidth = 0
         
         //Make Search Background Green
         tableView.backgroundView = UIView()
@@ -290,7 +293,7 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         
         let navBarController = navigationController!
         
-        let image = #imageLiteral(resourceName: "DRlogo2")
+        let image = #imageLiteral(resourceName: "DRNavigationBarLogo")
         let imageView = UIImageView(image: image)
         
         let bannerWidth = navBarController.navigationBar.frame.size.width

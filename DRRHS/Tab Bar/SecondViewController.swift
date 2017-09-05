@@ -30,7 +30,7 @@ class SecondViewController: TWTRTimelineViewController
         
         let navBarController = navigationController!
         
-        let image = #imageLiteral(resourceName: "DRlogo2")
+        let image = #imageLiteral(resourceName: "DRNavigationBarLogo")
         let imageView = UIImageView(image: image)
         
         let bannerWidth = navBarController.navigationBar.frame.size.width
