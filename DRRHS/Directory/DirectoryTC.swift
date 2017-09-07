@@ -183,12 +183,12 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         self.searchController = UISearchController(searchResultsController: self.resultsController)
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.searchController.searchResultsUpdater = self
+        self.searchController.searchBar.layer.borderWidth = 1
+        self.searchController.searchBar.layer.borderColor = UIColor.DRGreen.cgColor
+        //self.searchController.searchBar.layer.shadowColor = UIColor.DRGreen.cgColor
         
-        self.searchController.searchBar.layer.borderWidth = 0
-        self.extendedLayoutIncludesOpaqueBars = true
-        self.searchController.hidesNavigationBarDuringPresentation = true
+        
         definesPresentationContext = true
-        
         
         //Make Search Background Green
         tableView.backgroundView = UIView()
@@ -197,7 +197,6 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         //Remove Navigation Bar Border
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        
         
         
         //Add in the DR LOGO on top Bar
@@ -276,17 +275,13 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating {
         
     }
     
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? DirectoryDetailVC
         
-            
-        let vc = segue.destination as! DirectoryDetailVC
-        
-        vc.name = selectedTeacher.name
-        vc.email = selectedTeacher.email
-        vc.roomNumber = selectedTeacher.roomNumber
-        vc.website = selectedTeacher.website
-        
+        vc?.name = selectedTeacher.name
+        vc?.email = selectedTeacher.email
+        vc?.roomNumber = selectedTeacher.roomNumber
+        vc?.website = selectedTeacher.website
     }
     
     func addNavBarImage() {

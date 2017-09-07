@@ -19,8 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        
+        
         //Initialize Twitter Kit
         Twitter.sharedInstance().start(withConsumerKey:"T2Wid0Bme6VSkX05McK6MEHUf", consumerSecret:"Sq7OfRePU25ug54V8JwjtkkYHYkvoOQCCIF3jzeNCv3ZY7N6w8")
+        
+        
         
         //Notifications
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (authorized:Bool, error:Error?) in
@@ -30,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
+        
+        //Tint Search Bar to match theme
         UISearchBar.appearance().barTintColor = .DRGreen
         UISearchBar.appearance().tintColor = .white
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .DRGreen

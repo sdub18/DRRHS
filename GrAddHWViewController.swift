@@ -51,7 +51,7 @@ class GrAddHWViewController: UIViewController, UITextFieldDelegate{
         content.badge = 1
         content.categoryIdentifier = "notificationCategory"
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60*2, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60*5, repeats: false)
         
         let requestIndentifier = "GoldDayNotification"
         let request = UNNotificationRequest(identifier: requestIndentifier, content: content, trigger: trigger)
