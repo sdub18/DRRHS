@@ -27,6 +27,12 @@
 		31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */; };
 		31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */; };
 		695317781F60BA760092454A /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695317771F60BA760092454A /* DirectoryTC.swift */; };
+		696B153B1F70CCF500844EF8 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153A1F70CCF500844EF8 /* Schedule.storyboard */; };
+		696B153F1F70CE3700844EF8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153E1F70CE3700844EF8 /* Settings.storyboard */; };
+		696B15411F70CE6600844EF8 /* EditGreenDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B15401F70CE6600844EF8 /* EditGreenDay.storyboard */; };
+		696B15451F70CEB000844EF8 /* EditGoldDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B15441F70CEB000844EF8 /* EditGoldDay.storyboard */; };
+		696B15481F70CF8000844EF8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B15471F70CF8000844EF8 /* Home.storyboard */; };
+		696B154B1F70CFDE00844EF8 /* Directory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B154A1F70CFDE00844EF8 /* Directory.storyboard */; };
 		699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69971F19816000E9CAD9 /* AppDelegate.swift */; };
 		699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69991F19816000E9CAD9 /* FirstViewController.swift */; };
 		699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A699B1F19816000E9CAD9 /* SecondViewController.swift */; };
@@ -86,6 +92,12 @@
 		3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHS/Pods-DRRHS.debug.xcconfig"; sourceTree = "<group>"; };
 		695317771F60BA760092454A /* DirectoryTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryTC.swift; sourceTree = "<group>"; };
+		696B153A1F70CCF500844EF8 /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		696B153E1F70CE3700844EF8 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		696B15401F70CE6600844EF8 /* EditGreenDay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditGreenDay.storyboard; sourceTree = "<group>"; };
+		696B15441F70CEB000844EF8 /* EditGoldDay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditGoldDay.storyboard; sourceTree = "<group>"; };
+		696B15471F70CF8000844EF8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		696B154A1F70CFDE00844EF8 /* Directory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Directory.storyboard; sourceTree = "<group>"; };
 		699A69941F19816000E9CAD9 /* DRRHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRRHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A69971F19816000E9CAD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699A69991F19816000E9CAD9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +199,69 @@
 			path = "Gold Day Schedule";
 			sourceTree = "<group>";
 		};
+		696B153C1F70CD2D00844EF8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
+				69D419A91F60F74B00DF1B2A /* Main.storyboard */,
+				696B153D1F70CD3C00844EF8 /* Schedule */,
+				696B15491F70CF9200844EF8 /* Home */,
+				696B154C1F70D08200844EF8 /* Directory */,
+				696B15421F70CE7B00844EF8 /* Settings */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		696B153D1F70CD3C00844EF8 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				696B153A1F70CCF500844EF8 /* Schedule.storyboard */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		696B15421F70CE7B00844EF8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				696B153E1F70CE3700844EF8 /* Settings.storyboard */,
+				696B15431F70CE8200844EF8 /* Edit Green Day */,
+				696B15461F70CED800844EF8 /* Edit Gold Day */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		696B15431F70CE8200844EF8 /* Edit Green Day */ = {
+			isa = PBXGroup;
+			children = (
+				696B15401F70CE6600844EF8 /* EditGreenDay.storyboard */,
+			);
+			path = "Edit Green Day";
+			sourceTree = "<group>";
+		};
+		696B15461F70CED800844EF8 /* Edit Gold Day */ = {
+			isa = PBXGroup;
+			children = (
+				696B15441F70CEB000844EF8 /* EditGoldDay.storyboard */,
+			);
+			path = "Edit Gold Day";
+			sourceTree = "<group>";
+		};
+		696B15491F70CF9200844EF8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				696B15471F70CF8000844EF8 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		696B154C1F70D08200844EF8 /* Directory */ = {
+			isa = PBXGroup;
+			children = (
+				696B154A1F70CFDE00844EF8 /* Directory.storyboard */,
+			);
+			path = Directory;
+			sourceTree = "<group>";
+		};
 		699A698B1F19816000E9CAD9 = {
 			isa = PBXGroup;
 			children = (
@@ -213,14 +288,13 @@
 		699A69961F19816000E9CAD9 /* DRRHS */ = {
 			isa = PBXGroup;
 			children = (
-				69D419A91F60F74B00DF1B2A /* Main.storyboard */,
-				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
 				699A69971F19816000E9CAD9 /* AppDelegate.swift */,
-				69B8ABA21F5CED4E00A0A6BE /* Theme */,
+				696B153C1F70CD2D00844EF8 /* Storyboards */,
 				69B8ABA11F5CED3600A0A6BE /* Tab Bar */,
 				69D931E01F54F76A003D10B6 /* Directory */,
-				311E24D41F539D8D00E49052 /* Gold Day Schedule */,
 				311E24D31F539D6800E49052 /* Green Day Schedule */,
+				311E24D41F539D8D00E49052 /* Gold Day Schedule */,
+				69B8ABA21F5CED4E00A0A6BE /* Theme */,
 				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
 				699A69A51F19816000E9CAD9 /* Info.plist */,
 			);
@@ -403,9 +477,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696B154B1F70CFDE00844EF8 /* Directory.storyboard in Resources */,
 				69D419AA1F60F74B00DF1B2A /* Main.storyboard in Resources */,
+				696B15411F70CE6600844EF8 /* EditGreenDay.storyboard in Resources */,
+				696B15451F70CEB000844EF8 /* EditGoldDay.storyboard in Resources */,
 				699A69A41F19816000E9CAD9 /* LaunchScreen.storyboard in Resources */,
 				699A69A11F19816000E9CAD9 /* Assets.xcassets in Resources */,
+				696B153B1F70CCF500844EF8 /* Schedule.storyboard in Resources */,
+				696B153F1F70CE3700844EF8 /* Settings.storyboard in Resources */,
+				696B15481F70CF8000844EF8 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
