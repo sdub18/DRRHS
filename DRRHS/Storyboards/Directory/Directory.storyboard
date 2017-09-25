@@ -156,6 +156,11 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="DJG-Xn-Ea2"/>
+                                    <constraint firstAttribute="height" constant="568" id="GgU-gr-x6T"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="568" id="Vbc-af-SF1"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.92942053079999998" green="0.92940044399999999" blue="0.92940443750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -163,9 +168,10 @@
                             <constraint firstItem="hhL-0c-rUq" firstAttribute="centerX" secondItem="dSr-YJ-xxR" secondAttribute="centerX" id="DN9-kt-LOI"/>
                             <constraint firstItem="LlI-Ph-Af3" firstAttribute="top" secondItem="hhL-0c-rUq" secondAttribute="bottom" constant="15" id="JgE-WV-NdP"/>
                             <constraint firstItem="hhL-0c-rUq" firstAttribute="top" secondItem="RhK-Je-r7r" secondAttribute="bottom" constant="12.5" id="SK9-oR-BTz"/>
-                            <constraint firstAttribute="trailing" secondItem="LlI-Ph-Af3" secondAttribute="trailing" constant="20" id="c9G-3a-fW4"/>
-                            <constraint firstItem="2Fs-nt-6Bb" firstAttribute="top" secondItem="LlI-Ph-Af3" secondAttribute="bottom" constant="20" id="fD0-0Q-0f2"/>
-                            <constraint firstItem="LlI-Ph-Af3" firstAttribute="leading" secondItem="dSr-YJ-xxR" secondAttribute="leading" constant="20" id="iWA-bI-qcz"/>
+                            <constraint firstAttribute="trailing" secondItem="LlI-Ph-Af3" secondAttribute="trailing" priority="750" constant="20" id="c9G-3a-fW4"/>
+                            <constraint firstItem="2Fs-nt-6Bb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LlI-Ph-Af3" secondAttribute="bottom" constant="20" id="fD0-0Q-0f2"/>
+                            <constraint firstItem="LlI-Ph-Af3" firstAttribute="leading" secondItem="dSr-YJ-xxR" secondAttribute="leading" priority="750" constant="20" id="iWA-bI-qcz"/>
+                            <constraint firstItem="LlI-Ph-Af3" firstAttribute="centerX" secondItem="dSr-YJ-xxR" secondAttribute="centerX" id="oTq-r6-FY8"/>
                         </constraints>
                     </view>
                     <connections>

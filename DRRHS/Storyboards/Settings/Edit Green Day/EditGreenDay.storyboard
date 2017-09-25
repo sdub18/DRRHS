@@ -452,7 +452,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="enG-VV-bNL">
-                                <rect key="frame" x="12" y="87.5" width="351" height="555.5"/>
+                                <rect key="frame" x="12" y="87.5" width="351" height="556"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAR-Dz-ebP">
                                         <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
@@ -499,10 +499,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENN-cY-0Fn">
-                                        <rect key="frame" x="0.0" y="310" width="351" height="90.5"/>
+                                        <rect key="frame" x="0.0" y="310" width="351" height="91"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWk-Uu-5lz">
-                                                <rect key="frame" x="0.0" y="0.0" width="351" height="90.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                                 <state key="normal" title="Edit Block 3">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -521,7 +521,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjH-PW-3Pb">
-                                        <rect key="frame" x="0.0" y="464.5" width="351" height="91"/>
+                                        <rect key="frame" x="0.0" y="465" width="351" height="91"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-d8-U9k">
                                                 <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
@@ -543,16 +543,22 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="48w-yL-Pky"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="J15-4t-Ea8"/>
+                                    <constraint firstAttribute="height" priority="750" constant="600" id="qxH-GB-Tii"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.92942053079999998" green="0.92940044399999999" blue="0.92940443750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="enG-VV-bNL" firstAttribute="top" secondItem="vH9-Xq-cJ6" secondAttribute="bottom" constant="24" id="C3X-nO-16e"/>
-                            <constraint firstAttribute="trailing" secondItem="enG-VV-bNL" secondAttribute="trailing" constant="12" id="CQk-Bh-SE2"/>
+                            <constraint firstAttribute="trailing" secondItem="enG-VV-bNL" secondAttribute="trailing" priority="750" constant="12" id="CQk-Bh-SE2"/>
                             <constraint firstItem="vH9-Xq-cJ6" firstAttribute="top" secondItem="1Yy-9C-Ktz" secondAttribute="bottom" constant="12" id="dis-eg-iS5"/>
-                            <constraint firstItem="enG-VV-bNL" firstAttribute="leading" secondItem="zKU-4j-vnd" secondAttribute="leading" constant="12" id="f0h-wk-3A2"/>
+                            <constraint firstItem="enG-VV-bNL" firstAttribute="leading" secondItem="zKU-4j-vnd" secondAttribute="leading" priority="750" constant="12" id="f0h-wk-3A2"/>
+                            <constraint firstItem="enG-VV-bNL" firstAttribute="centerX" secondItem="zKU-4j-vnd" secondAttribute="centerX" id="hKd-px-JH9"/>
                             <constraint firstItem="vH9-Xq-cJ6" firstAttribute="centerX" secondItem="zKU-4j-vnd" secondAttribute="centerX" id="piX-Ss-BMq"/>
-                            <constraint firstItem="Ssm-fb-rCx" firstAttribute="top" secondItem="enG-VV-bNL" secondAttribute="bottom" constant="24" id="wHC-09-ROt"/>
+                            <constraint firstItem="Ssm-fb-rCx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="enG-VV-bNL" secondAttribute="bottom" constant="24" id="wHC-09-ROt"/>
                         </constraints>
                     </view>
                     <connections>

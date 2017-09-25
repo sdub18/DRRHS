@@ -119,16 +119,22 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" constant="600" id="5U0-rf-RDo"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="RBk-SZ-tgK"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="puz-Wi-09d"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="BWK-dV-2VV" firstAttribute="centerX" secondItem="7kP-0Z-Xhn" secondAttribute="centerX" id="42u-Yi-ohl"/>
                             <constraint firstItem="BWK-dV-2VV" firstAttribute="top" secondItem="ufe-cF-NXN" secondAttribute="bottom" constant="24" id="7E9-7g-pQO"/>
-                            <constraint firstAttribute="trailing" secondItem="BWK-dV-2VV" secondAttribute="trailing" constant="12" id="B3z-YX-lGw"/>
+                            <constraint firstAttribute="trailing" secondItem="BWK-dV-2VV" secondAttribute="trailing" priority="750" constant="12" id="B3z-YX-lGw"/>
                             <constraint firstItem="ufe-cF-NXN" firstAttribute="centerX" secondItem="7kP-0Z-Xhn" secondAttribute="centerX" id="E9v-cN-hty"/>
                             <constraint firstItem="ufe-cF-NXN" firstAttribute="top" secondItem="l4J-fS-B6e" secondAttribute="bottom" constant="13" id="Oml-LQ-UOn"/>
-                            <constraint firstItem="BWK-dV-2VV" firstAttribute="leading" secondItem="7kP-0Z-Xhn" secondAttribute="leading" constant="12" id="Ste-Ec-B4M"/>
-                            <constraint firstItem="kel-CB-jfe" firstAttribute="top" secondItem="BWK-dV-2VV" secondAttribute="bottom" constant="24" id="g4q-Ag-zJ0"/>
+                            <constraint firstItem="BWK-dV-2VV" firstAttribute="leading" secondItem="7kP-0Z-Xhn" secondAttribute="leading" priority="750" constant="12" id="Ste-Ec-B4M"/>
+                            <constraint firstItem="kel-CB-jfe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BWK-dV-2VV" secondAttribute="bottom" constant="24" id="g4q-Ag-zJ0"/>
                         </constraints>
                     </view>
                     <connections>
