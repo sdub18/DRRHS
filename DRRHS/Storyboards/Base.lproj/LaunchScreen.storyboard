@@ -23,6 +23,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="scheduleBarIcon" selectedImage="scheduleBarIcon" id="SlX-ha-LPx"/>
+                    <navigationItem key="navigationItem" id="TAq-SE-agp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TcS-VE-ttF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="375"/>
+            <point key="canvasLocation" x="940" y="374"/>
         </scene>
         <!--Teachers-->
         <scene sceneID="4lY-Pl-d6g">
@@ -62,6 +63,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Teachers" image="teachersBarIcon" selectedImage="teachersBarIcon" id="tne-ly-ddb"/>
+                    <navigationItem key="navigationItem" id="Hsy-qi-jvi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeU-sh-FOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +94,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cW2-u2-0lF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="SRt-1o-2Mv">
-                        <barButtonItem key="rightBarButtonItem" image="settingsIcon" id="PXd-3F-RKj">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="settingsIcon" id="PXd-3F-RKj">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
