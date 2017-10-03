@@ -20,7 +20,7 @@ class SecondViewController: TWTRTimelineViewController
         
         //Add the Twitter Timeline to the view controller
         let client = TWTRAPIClient()
-        self.dataSource = TWTRListTimelineDataSource(listSlug: "DRRHS", listOwnerScreenName: "HolmeComputer", apiClient: client)
+        self.dataSource = TWTRListTimelineDataSource(listSlug: "DRRHS", listOwnerScreenName: "sdubois181", apiClient: client)
     
         addNavBarImage()
     }
