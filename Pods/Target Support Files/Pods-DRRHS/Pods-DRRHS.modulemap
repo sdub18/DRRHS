@@ -1,6 +1,0 @@
-framework module Pods_DRRHS {
-  umbrella header "Pods-DRRHS-umbrella.h"
-
-  export *
-  module * { export * }
-}
